@@ -1,0 +1,8 @@
+prefix=/home/enterprise/enterprise_ws/install
+
+Name: mst_navigation
+Description: Description of mst_navigation
+Version: 0.0.0
+Cflags: -I/home/enterprise/enterprise_ws/install/include
+Libs: -L/home/enterprise/enterprise_ws/install/lib -lmst_navigation
+Requires: mst_position dynamic_reconfigure

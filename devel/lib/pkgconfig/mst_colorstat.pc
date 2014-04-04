@@ -1,0 +1,8 @@
+prefix=/home/enterprise/enterprise_ws/devel
+
+Name: mst_colorstat
+Description: Description of mst_colorstat
+Version: 1.0.0
+Cflags: -I/home/enterprise/enterprise_ws/devel/include -I/home/enterprise/enterprise_ws/src/mst_colorstat/include
+Libs: -L/home/enterprise/enterprise_ws/devel/lib -lmst_colorstat
+Requires: cv_bridge image_transport vision_opencv roscpp sensor_msgs std_msgs

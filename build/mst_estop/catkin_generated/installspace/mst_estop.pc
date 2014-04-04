@@ -1,0 +1,8 @@
+prefix=/home/enterprise/enterprise_ws/install
+
+Name: mst_estop
+Description: Description of mst_estop
+Version: 1.0.0
+Cflags: -I/home/enterprise/enterprise_ws/install/include
+Libs: -L/home/enterprise/enterprise_ws/install/lib -lmst_estop
+Requires: roscpp message_runtime

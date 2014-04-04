@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "mst_midg")
+set(mst_midg_MAINTAINER "Matt <mia2n4@mst.edu>")
+set(mst_midg_DEPRECATED "")
+set(mst_midg_VERSION "0.0.0")
+set(mst_midg_BUILD_DEPENDS "roscpp" "sensor_msgs" "message_generation")
+set(mst_midg_RUN_DEPENDS "roscpp" "sensor_msgs" "message_runtime")
+set(mst_midg_BUILDTOOL_DEPENDS "catkin")

@@ -1,0 +1,8 @@
+prefix=/home/enterprise/enterprise_ws/install
+
+Name: mst_midg
+Description: Description of mst_midg
+Version: 0.0.0
+Cflags: -I/home/enterprise/enterprise_ws/install/include
+Libs: -L/home/enterprise/enterprise_ws/install/lib 
+Requires: 

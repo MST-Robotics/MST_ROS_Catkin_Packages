@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "mst_estop")
+set(mst_estop_MAINTAINER "Mike Chrisco <mcccnb@mst.edu>")
+set(mst_estop_DEPRECATED "")
+set(mst_estop_VERSION "1.0.0")
+set(mst_estop_BUILD_DEPENDS "roscpp" "message_generation")
+set(mst_estop_RUN_DEPENDS "roscpp" "message_runtime")
+set(mst_estop_BUILDTOOL_DEPENDS "catkin")

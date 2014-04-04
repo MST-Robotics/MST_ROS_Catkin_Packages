@@ -1,0 +1,15 @@
+\subsubsection usage Usage
+\verbatim
+<node name="dynamic_reconfigure_node" pkg="mst_colorstat" type="dynamic_reconfigure_node">
+  <param name="reset" type="bool" value="False" />
+  <param name="enabled" type="bool" value="False" />
+  <param name="xMin" type="int" value="270" />
+  <param name="xMax" type="int" value="370" />
+  <param name="yMin" type="int" value="0" />
+  <param name="yMax" type="int" value="100" />
+  <param name="load" type="bool" value="False" />
+  <param name="save" type="bool" value="False" />
+  <param name="filename" type="str" value="stat.stat" />
+</node>
+\endverbatim
+

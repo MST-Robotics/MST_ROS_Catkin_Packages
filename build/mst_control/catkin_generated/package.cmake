@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "mst_control")
+set(mst_control_MAINTAINER "enterprise <enterprise@todo.todo>")
+set(mst_control_DEPRECATED "")
+set(mst_control_VERSION "0.0.0")
+set(mst_control_BUILD_DEPENDS )
+set(mst_control_RUN_DEPENDS )
+set(mst_control_BUILDTOOL_DEPENDS "catkin")

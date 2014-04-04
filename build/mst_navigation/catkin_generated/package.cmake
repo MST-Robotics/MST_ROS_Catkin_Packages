@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "mst_navigation")
+set(mst_navigation_MAINTAINER "Matt <mia2n4@mst.edu>")
+set(mst_navigation_DEPRECATED "")
+set(mst_navigation_VERSION "0.0.0")
+set(mst_navigation_BUILD_DEPENDS "sensor_msgs" "opencv2" "cv_bridge" "roscpp" "image_transport" "geometry_msgs" "dynamic_reconfigure" "driver_base" "mst_position")
+set(mst_navigation_RUN_DEPENDS "roscpp" "sensor_msgs" "message_runtime" "opencv2" "cv_bridge" "image_transport" "geometry_msgs" "dynamic_reconfigure" "driver_base" "mst_position")
+set(mst_navigation_BUILDTOOL_DEPENDS "catkin")

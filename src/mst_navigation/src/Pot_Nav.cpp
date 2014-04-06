@@ -68,7 +68,7 @@ ros::Subscriber                 target_sub;
 ros::Publisher                  twist_pub;
 image_transport::Publisher      map_pub;
 
-MST_Position::Target_Heading    target;
+mst_position::target_heading    target;
 
 bool                            map_changed = 0;
 std::queue<ros::Time>                       edges_time_q ;
@@ -76,7 +76,7 @@ std::queue<ros::Time>                       stat_time_q ;
 
 bool                            first_callback = 1;
 
-MST_Potential_Navigation::Pot_Nav_ParamsConfig params;
+mst_navigation::Pot_Nav_ParamsConfig params;
 
 /***********************************************************
 * Function prototypes
@@ -227,7 +227,7 @@ void targetCallback( const mst_position::target_heading::ConstPtr& msg)
 * @pre has to have the setup for the reconfigure gui
 * @post changes the parameters
 ***********************************************************/
-void setparamsCallback(MST_Potential_Navigation::Pot_Nav_ParamsConfig &config, uint32_t level)
+void setparamsCallback(mst_navigation::Pot_Nav_ParamsConfig &config, uint32_t level)
 {
 
   
@@ -462,8 +462,8 @@ int main(int argc, char **argv)
 
     
     //setup dynamic reconfigure
-	dynamic_reconfigure::Server<MST_Potential_Navigation::Pot_Nav_ParamsConfig> srv;
-    dynamic_reconfigure::Server<MST_Potential_Navigation::Pot_Nav_ParamsConfig>::CallbackType f;
+	dynamic_reconfigure::Server<mst_navigation::Pot_Nav_ParamsConfig> srv;
+    dynamic_reconfigure::Server<mst_navigation::Pot_Nav_ParamsConfig>::CallbackType f;
     f = boost::bind(&setparamsCallback, _1, _2);
 	srv.setCallback(f);
 

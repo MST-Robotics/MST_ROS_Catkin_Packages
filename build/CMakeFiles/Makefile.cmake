@@ -25,6 +25,8 @@ SET(CMAKE_MAKEFILE_DEPENDS
   "mst_midg/catkin_generated/ordered_paths.cmake"
   "mst_midg/catkin_generated/package.cmake"
   "mst_midg/cmake/mst_midg-genmsg.cmake"
+  "mst_navigation/catkin_generated/ordered_paths.cmake"
+  "mst_navigation/catkin_generated/package.cmake"
   "mst_position/catkin_generated/mst_position-msg-extras.cmake.develspace.in"
   "mst_position/catkin_generated/mst_position-msg-extras.cmake.installspace.in"
   "mst_position/catkin_generated/ordered_paths.cmake"
@@ -47,6 +49,8 @@ SET(CMAKE_MAKEFILE_DEPENDS
   "/home/enterprise/enterprise_ws/src/mst_estop/package.xml"
   "/home/enterprise/enterprise_ws/src/mst_midg/CMakeLists.txt"
   "/home/enterprise/enterprise_ws/src/mst_midg/package.xml"
+  "/home/enterprise/enterprise_ws/src/mst_navigation/CMakeLists.txt"
+  "/home/enterprise/enterprise_ws/src/mst_navigation/package.xml"
   "/home/enterprise/enterprise_ws/src/mst_position/CMakeLists.txt"
   "/home/enterprise/enterprise_ws/src/mst_position/package.xml"
   "/home/enterprise/enterprise_ws/src/robot_setup_tf/CMakeLists.txt"
@@ -249,6 +253,7 @@ SET(CMAKE_MAKEFILE_PRODUCTS
   "mst_estop/CMakeFiles/CMakeDirectoryInformation.cmake"
   "mst_midg/CMakeFiles/CMakeDirectoryInformation.cmake"
   "mst_position/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "mst_navigation/CMakeFiles/CMakeDirectoryInformation.cmake"
   "robot_setup_tf/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
@@ -326,6 +331,8 @@ SET(CMAKE_DEPEND_INFO_FILES
   "mst_position/CMakeFiles/tf_generate_messages_cpp.dir/DependInfo.cmake"
   "mst_position/CMakeFiles/tf_generate_messages_lisp.dir/DependInfo.cmake"
   "mst_position/CMakeFiles/tf_generate_messages_py.dir/DependInfo.cmake"
+  "mst_navigation/CMakeFiles/mst_navigation.dir/DependInfo.cmake"
+  "mst_navigation/CMakeFiles/mst_navigation_gencfg.dir/DependInfo.cmake"
   "robot_setup_tf/CMakeFiles/tf_broadcaster.dir/DependInfo.cmake"
   "robot_setup_tf/CMakeFiles/tf_listener.dir/DependInfo.cmake"
   )

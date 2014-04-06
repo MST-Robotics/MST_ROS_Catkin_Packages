@@ -12,7 +12,11 @@ find_package(catkin REQUIRED COMPONENTS
 	dynamic_reconfigure
 	driver_base
 	message_generation
+	cv_bridge
 )
+
+find_package(OpenCV REQUIRED)
+include_directories(${OpenCV_INCLUDE_DIRS})
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
@@ -49,7 +53,7 @@ find_package(catkin REQUIRED COMPONENTS
 
 ## Add dynamic reconfigure api
 generate_dynamic_reconfigure_options(
-  cfg/Position_Params.cfg
+  cfg/Pot_Nav_Params.cfg
 )
 
 ## Generate messages in the 'msg' folder
@@ -111,7 +115,7 @@ catkin_package(
 ## Declare a cpp executable
 add_executable(mst_navigation src/Pot_Nav.cpp)
 add_dependencies(mst_navigation mst_navigation_gencpp mst_navigation_gencfg)
-target_link_libraries(mst_navigation ${catkin_LIBRARIES})
+target_link_libraries(mst_navigation ${catkin_LIBRARIES} ${OpenCV_LIBS})
 
 ## Add cmake target dependencies of the executable/library
 ## as an example, message headers may need to be generated before nodes

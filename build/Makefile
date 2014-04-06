@@ -1083,6 +1083,32 @@ tf_generate_messages_py/fast:
 .PHONY : tf_generate_messages_py/fast
 
 #=============================================================================
+# Target rules for targets named mst_navigation
+
+# Build rule for target.
+mst_navigation: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mst_navigation
+.PHONY : mst_navigation
+
+# fast build rule for target.
+mst_navigation/fast:
+	$(MAKE) -f mst_navigation/CMakeFiles/mst_navigation.dir/build.make mst_navigation/CMakeFiles/mst_navigation.dir/build
+.PHONY : mst_navigation/fast
+
+#=============================================================================
+# Target rules for targets named mst_navigation_gencfg
+
+# Build rule for target.
+mst_navigation_gencfg: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mst_navigation_gencfg
+.PHONY : mst_navigation_gencfg
+
+# fast build rule for target.
+mst_navigation_gencfg/fast:
+	$(MAKE) -f mst_navigation/CMakeFiles/mst_navigation_gencfg.dir/build.make mst_navigation/CMakeFiles/mst_navigation_gencfg.dir/build
+.PHONY : mst_navigation_gencfg/fast
+
+#=============================================================================
 # Target rules for targets named tf_broadcaster
 
 # Build rule for target.
@@ -1193,6 +1219,8 @@ help:
 	@echo "... tf_generate_messages_cpp"
 	@echo "... tf_generate_messages_lisp"
 	@echo "... tf_generate_messages_py"
+	@echo "... mst_navigation"
+	@echo "... mst_navigation_gencfg"
 	@echo "... tf_broadcaster"
 	@echo "... tf_listener"
 .PHONY : help

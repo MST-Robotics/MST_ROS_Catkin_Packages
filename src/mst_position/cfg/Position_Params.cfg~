@@ -1,7 +1,7 @@
 #! /usr/bin/env python
 # Forearm camera configuration
 
-PACKAGE='mst_osition'
+PACKAGE='mst_position'
 import roslib; roslib.load_manifest(PACKAGE)
 
 from math import pi

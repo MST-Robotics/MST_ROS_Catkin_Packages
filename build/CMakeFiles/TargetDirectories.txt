@@ -38,8 +38,6 @@
 /home/enterprise/enterprise_ws/build/mst_midg/CMakeFiles/mst_midg_generate_messages_py.dir
 /home/enterprise/enterprise_ws/build/mst_midg/CMakeFiles/mst_midg_genlisp.dir
 /home/enterprise/enterprise_ws/build/mst_midg/CMakeFiles/mst_midg_genpy.dir
-/home/enterprise/enterprise_ws/build/mst_navigation/CMakeFiles/mst_navigation.dir
-/home/enterprise/enterprise_ws/build/mst_navigation/CMakeFiles/mst_navigation_gencfg.dir
 /home/enterprise/enterprise_ws/build/mst_position/CMakeFiles/mst_position.dir
 /home/enterprise/enterprise_ws/build/mst_position/CMakeFiles/mst_position_gencfg.dir
 /home/enterprise/enterprise_ws/build/mst_position/CMakeFiles/mst_position_gencpp.dir
@@ -69,6 +67,8 @@
 /home/enterprise/enterprise_ws/build/mst_position/CMakeFiles/tf2_msgs_generate_messages_cpp.dir
 /home/enterprise/enterprise_ws/build/mst_position/CMakeFiles/tf2_msgs_generate_messages_lisp.dir
 /home/enterprise/enterprise_ws/build/mst_position/CMakeFiles/tf2_msgs_generate_messages_py.dir
+/home/enterprise/enterprise_ws/build/robot_setup_tf/CMakeFiles/tf_broadcaster.dir
 /home/enterprise/enterprise_ws/build/mst_position/CMakeFiles/tf_generate_messages_cpp.dir
 /home/enterprise/enterprise_ws/build/mst_position/CMakeFiles/tf_generate_messages_lisp.dir
 /home/enterprise/enterprise_ws/build/mst_position/CMakeFiles/tf_generate_messages_py.dir
+/home/enterprise/enterprise_ws/build/robot_setup_tf/CMakeFiles/tf_listener.dir

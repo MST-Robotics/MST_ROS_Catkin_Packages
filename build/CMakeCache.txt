@@ -326,7 +326,7 @@ gtest_main_LIB_DEPENDS:STATIC=general;-lpthread;general;gtest;
 image_transport_DIR:PATH=/opt/ros/hydro/share/image_transport/cmake
 
 //Path to a library.
-lib:FILEPATH=/opt/ros/hydro/lib/libdynamic_reconfigure_config_init_mutex.so
+lib:FILEPATH=/opt/ros/hydro/lib/libtf2.so
 
 //The directory containing a CMake configuration file for message_filters.
 message_filters_DIR:PATH=/opt/ros/hydro/share/message_filters/cmake
@@ -386,6 +386,12 @@ opencv2_DIR:PATH=opencv2_DIR-NOTFOUND
 
 //The directory containing a CMake configuration file for pluginlib.
 pluginlib_DIR:PATH=/opt/ros/hydro/share/pluginlib/cmake
+
+//Value Computed by CMake
+robot_setup_tf_BINARY_DIR:STATIC=/home/enterprise/enterprise_ws/build/robot_setup_tf
+
+//Value Computed by CMake
+robot_setup_tf_SOURCE_DIR:STATIC=/home/enterprise/enterprise_ws/src/robot_setup_tf
 
 //The directory containing a CMake configuration file for rosconsole.
 rosconsole_DIR:PATH=/opt/ros/hydro/share/rosconsole/cmake

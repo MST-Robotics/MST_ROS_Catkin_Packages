@@ -90,7 +90,7 @@ IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   INCLUDE("/home/enterprise/enterprise_ws/build/mst_estop/cmake_install.cmake")
   INCLUDE("/home/enterprise/enterprise_ws/build/mst_midg/cmake_install.cmake")
   INCLUDE("/home/enterprise/enterprise_ws/build/mst_position/cmake_install.cmake")
-  INCLUDE("/home/enterprise/enterprise_ws/build/mst_navigation/cmake_install.cmake")
+  INCLUDE("/home/enterprise/enterprise_ws/build/robot_setup_tf/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 

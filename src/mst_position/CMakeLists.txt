@@ -96,7 +96,7 @@ generate_messages(
 catkin_package(
 	INCLUDE_DIRS include
 	LIBRARIES mst_position
-	CATKIN_DEPENDS driver_base dynamic_reconfigure geometry_msgs nav_msgs sensor_msgs tf dynamic_reconfigure
+	CATKIN_DEPENDS driver_base dynamic_reconfigure geometry_msgs nav_msgs sensor_msgs tf dynamic_reconfigure 
 	DEPENDS system_lib
 )
 
@@ -118,7 +118,7 @@ include_directories(
 
 ## Declare a cpp executable
 add_executable(mst_position src/Position.cpp)
-add_dependencies(mst_position mst_position_gencpp)
+add_dependencies(mst_position mst_position_gencpp mst_position_gencfg)
 target_link_libraries(mst_position ${catkin_LIBRARIES})
 
 ## Add cmake target dependencies of the executable/library

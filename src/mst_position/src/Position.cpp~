@@ -81,9 +81,9 @@ double chosen_dist = -1;
 double chosen_brng = 0;
 int chosen_index = 99;
 
-MST_Position::Target_Heading    target_heading;
+mst_position::target_heading    target_heading;
 
-MST_Position::Position_ParamsConfig    params;
+mst_position::Position_ParamsConfig    params;
 
 /***********************************************************
 * Function prototypes
@@ -94,7 +94,7 @@ void read_waypoints();
 double find_dist(double, double , double ,double );
 double find_heading(double, double , double ,double );
 int find_target();
-MST_Position::Target_Heading compute_msg(int);
+mst_position::target_heading compute_msg(int);
 nav_msgs::Odometry odom_msg();
 void odom_set_origin();
 
@@ -179,7 +179,7 @@ void gpsCallback( const sensor_msgs::NavSatFix::ConstPtr& fix)
 * @pre has to have the setup for the reconfigure gui
 * @post changes the parameters
 ***********************************************************/
-void setparamsCallback(MST_Position::Position_ParamsConfig &config, uint32_t level)
+void setparamsCallback(mst_position::Position_ParamsConfig &config, uint32_t level)
 {
   
 	if(config.skip_waypoint)
@@ -513,9 +513,9 @@ int find_target()
 	
 }
 
-MST_Position::Target_Heading compute_msg(int target)
+mst_position::target_heading compute_msg(int target)
 {
-	MST_Position::Target_Heading heading;
+	mst_position::target_heading heading;
 	double lat = way_lat[target] / 180 * pi ;
 	double lon = way_lon[target] / 180 * pi; 
  	
@@ -617,8 +617,8 @@ int main(int argc, char **argv)
 	int target_waypoint = -1;
 
     //setup dynamic reconfigure
-	dynamic_reconfigure::Server<MST_Position::Position_ParamsConfig> srv;
-    dynamic_reconfigure::Server<MST_Position::Position_ParamsConfig>::CallbackType f;
+	dynamic_reconfigure::Server<mst_position::Position_ParamsConfig> srv;
+    dynamic_reconfigure::Server<mst_position::Position_ParamsConfig>::CallbackType f;
     f = boost::bind(&setparamsCallback, _1, _2);
 	srv.setCallback(f);
 
@@ -628,7 +628,7 @@ int main(int argc, char **argv)
     garmin_sub = n.subscribe( "fix" , 20, gpsCallback );
 
     //create publishers
-    target_pub = n.advertise<MST_Position::Target_Heading>( "target" , 5 );
+    target_pub = n.advertise<mst_position::Target_Heading>( "target" , 5 );
         
     odom_pub = n.advertise<nav_msgs::Odometry>( "vo", 5 );
     

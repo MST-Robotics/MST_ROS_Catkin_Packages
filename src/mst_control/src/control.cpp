@@ -5,7 +5,7 @@
 * @date 4/3/13
 * @brief controlls which output goes to motors 
 ******************************************************************************/
-#include    "control.h"
+#include "control.h"
 #include "geometry_msgs/Vector3.h"
 
 

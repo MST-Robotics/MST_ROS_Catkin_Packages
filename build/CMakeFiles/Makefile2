@@ -87,7 +87,7 @@ clean: CMakeFiles/clean_test_results.dir/clean
 CMakeFiles/doxygen.dir/all:
 	$(MAKE) -f CMakeFiles/doxygen.dir/build.make CMakeFiles/doxygen.dir/depend
 	$(MAKE) -f CMakeFiles/doxygen.dir/build.make CMakeFiles/doxygen.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles  5
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles  6
 	@echo "Built target doxygen"
 .PHONY : CMakeFiles/doxygen.dir/all
 
@@ -196,7 +196,7 @@ gtest/preinstall:
 gtest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f gtest/CMakeFiles/gtest.dir/build.make gtest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f gtest/CMakeFiles/gtest.dir/build.make gtest/CMakeFiles/gtest.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles  6
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles  7
 	@echo "Built target gtest"
 .PHONY : gtest/CMakeFiles/gtest.dir/all
 
@@ -227,7 +227,7 @@ clean: gtest/CMakeFiles/gtest.dir/clean
 gtest/CMakeFiles/gtest_main.dir/all: gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/CMakeFiles/gtest_main.dir/build.make gtest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f gtest/CMakeFiles/gtest_main.dir/build.make gtest/CMakeFiles/gtest_main.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles  7
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles  8
 	@echo "Built target gtest_main"
 .PHONY : gtest/CMakeFiles/gtest_main.dir/all
 
@@ -252,6 +252,802 @@ clean: gtest/CMakeFiles/gtest_main.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Directory level rules for directory mst_color
+
+# Convenience name for "all" pass in the directory.
+mst_color/all: mst_color/CMakeFiles/color.dir/all
+mst_color/all: mst_color/CMakeFiles/mst_color.dir/all
+mst_color/all: mst_color/CMakeFiles/mst_color_gencfg.dir/all
+.PHONY : mst_color/all
+
+# Convenience name for "clean" pass in the directory.
+mst_color/clean: mst_color/CMakeFiles/color.dir/clean
+mst_color/clean: mst_color/CMakeFiles/driver_base_generate_messages_cpp.dir/clean
+mst_color/clean: mst_color/CMakeFiles/driver_base_generate_messages_lisp.dir/clean
+mst_color/clean: mst_color/CMakeFiles/driver_base_generate_messages_py.dir/clean
+mst_color/clean: mst_color/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/clean
+mst_color/clean: mst_color/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/clean
+mst_color/clean: mst_color/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/clean
+mst_color/clean: mst_color/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
+mst_color/clean: mst_color/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
+mst_color/clean: mst_color/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
+mst_color/clean: mst_color/CMakeFiles/mst_color.dir/clean
+mst_color/clean: mst_color/CMakeFiles/mst_color_gencfg.dir/clean
+mst_color/clean: mst_color/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
+mst_color/clean: mst_color/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
+mst_color/clean: mst_color/CMakeFiles/roscpp_generate_messages_py.dir/clean
+mst_color/clean: mst_color/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
+mst_color/clean: mst_color/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
+mst_color/clean: mst_color/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
+mst_color/clean: mst_color/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
+mst_color/clean: mst_color/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
+mst_color/clean: mst_color/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
+mst_color/clean: mst_color/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+mst_color/clean: mst_color/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+mst_color/clean: mst_color/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+.PHONY : mst_color/clean
+
+# Convenience name for "preinstall" pass in the directory.
+mst_color/preinstall:
+.PHONY : mst_color/preinstall
+
+#=============================================================================
+# Target rules for target mst_color/CMakeFiles/color.dir
+
+# All Build rule for target.
+mst_color/CMakeFiles/color.dir/all:
+	$(MAKE) -f mst_color/CMakeFiles/color.dir/build.make mst_color/CMakeFiles/color.dir/depend
+	$(MAKE) -f mst_color/CMakeFiles/color.dir/build.make mst_color/CMakeFiles/color.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles  5
+	@echo "Built target color"
+.PHONY : mst_color/CMakeFiles/color.dir/all
+
+# Include target in all.
+all: mst_color/CMakeFiles/color.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+mst_color/CMakeFiles/color.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 mst_color/CMakeFiles/color.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
+.PHONY : mst_color/CMakeFiles/color.dir/rule
+
+# Convenience name for target.
+color: mst_color/CMakeFiles/color.dir/rule
+.PHONY : color
+
+# clean rule for target.
+mst_color/CMakeFiles/color.dir/clean:
+	$(MAKE) -f mst_color/CMakeFiles/color.dir/build.make mst_color/CMakeFiles/color.dir/clean
+.PHONY : mst_color/CMakeFiles/color.dir/clean
+
+# clean rule for target.
+clean: mst_color/CMakeFiles/color.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target mst_color/CMakeFiles/driver_base_generate_messages_cpp.dir
+
+# All Build rule for target.
+mst_color/CMakeFiles/driver_base_generate_messages_cpp.dir/all:
+	$(MAKE) -f mst_color/CMakeFiles/driver_base_generate_messages_cpp.dir/build.make mst_color/CMakeFiles/driver_base_generate_messages_cpp.dir/depend
+	$(MAKE) -f mst_color/CMakeFiles/driver_base_generate_messages_cpp.dir/build.make mst_color/CMakeFiles/driver_base_generate_messages_cpp.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles 
+	@echo "Built target driver_base_generate_messages_cpp"
+.PHONY : mst_color/CMakeFiles/driver_base_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+mst_color/CMakeFiles/driver_base_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 mst_color/CMakeFiles/driver_base_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
+.PHONY : mst_color/CMakeFiles/driver_base_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+driver_base_generate_messages_cpp: mst_color/CMakeFiles/driver_base_generate_messages_cpp.dir/rule
+.PHONY : driver_base_generate_messages_cpp
+
+# clean rule for target.
+mst_color/CMakeFiles/driver_base_generate_messages_cpp.dir/clean:
+	$(MAKE) -f mst_color/CMakeFiles/driver_base_generate_messages_cpp.dir/build.make mst_color/CMakeFiles/driver_base_generate_messages_cpp.dir/clean
+.PHONY : mst_color/CMakeFiles/driver_base_generate_messages_cpp.dir/clean
+
+# clean rule for target.
+clean: mst_color/CMakeFiles/driver_base_generate_messages_cpp.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target mst_color/CMakeFiles/driver_base_generate_messages_lisp.dir
+
+# All Build rule for target.
+mst_color/CMakeFiles/driver_base_generate_messages_lisp.dir/all:
+	$(MAKE) -f mst_color/CMakeFiles/driver_base_generate_messages_lisp.dir/build.make mst_color/CMakeFiles/driver_base_generate_messages_lisp.dir/depend
+	$(MAKE) -f mst_color/CMakeFiles/driver_base_generate_messages_lisp.dir/build.make mst_color/CMakeFiles/driver_base_generate_messages_lisp.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles 
+	@echo "Built target driver_base_generate_messages_lisp"
+.PHONY : mst_color/CMakeFiles/driver_base_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+mst_color/CMakeFiles/driver_base_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 mst_color/CMakeFiles/driver_base_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
+.PHONY : mst_color/CMakeFiles/driver_base_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+driver_base_generate_messages_lisp: mst_color/CMakeFiles/driver_base_generate_messages_lisp.dir/rule
+.PHONY : driver_base_generate_messages_lisp
+
+# clean rule for target.
+mst_color/CMakeFiles/driver_base_generate_messages_lisp.dir/clean:
+	$(MAKE) -f mst_color/CMakeFiles/driver_base_generate_messages_lisp.dir/build.make mst_color/CMakeFiles/driver_base_generate_messages_lisp.dir/clean
+.PHONY : mst_color/CMakeFiles/driver_base_generate_messages_lisp.dir/clean
+
+# clean rule for target.
+clean: mst_color/CMakeFiles/driver_base_generate_messages_lisp.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target mst_color/CMakeFiles/driver_base_generate_messages_py.dir
+
+# All Build rule for target.
+mst_color/CMakeFiles/driver_base_generate_messages_py.dir/all:
+	$(MAKE) -f mst_color/CMakeFiles/driver_base_generate_messages_py.dir/build.make mst_color/CMakeFiles/driver_base_generate_messages_py.dir/depend
+	$(MAKE) -f mst_color/CMakeFiles/driver_base_generate_messages_py.dir/build.make mst_color/CMakeFiles/driver_base_generate_messages_py.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles 
+	@echo "Built target driver_base_generate_messages_py"
+.PHONY : mst_color/CMakeFiles/driver_base_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+mst_color/CMakeFiles/driver_base_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 mst_color/CMakeFiles/driver_base_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
+.PHONY : mst_color/CMakeFiles/driver_base_generate_messages_py.dir/rule
+
+# Convenience name for target.
+driver_base_generate_messages_py: mst_color/CMakeFiles/driver_base_generate_messages_py.dir/rule
+.PHONY : driver_base_generate_messages_py
+
+# clean rule for target.
+mst_color/CMakeFiles/driver_base_generate_messages_py.dir/clean:
+	$(MAKE) -f mst_color/CMakeFiles/driver_base_generate_messages_py.dir/build.make mst_color/CMakeFiles/driver_base_generate_messages_py.dir/clean
+.PHONY : mst_color/CMakeFiles/driver_base_generate_messages_py.dir/clean
+
+# clean rule for target.
+clean: mst_color/CMakeFiles/driver_base_generate_messages_py.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target mst_color/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir
+
+# All Build rule for target.
+mst_color/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/all:
+	$(MAKE) -f mst_color/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build.make mst_color/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/depend
+	$(MAKE) -f mst_color/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build.make mst_color/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles 
+	@echo "Built target dynamic_reconfigure_generate_messages_cpp"
+.PHONY : mst_color/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+mst_color/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 mst_color/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
+.PHONY : mst_color/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+dynamic_reconfigure_generate_messages_cpp: mst_color/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule
+.PHONY : dynamic_reconfigure_generate_messages_cpp
+
+# clean rule for target.
+mst_color/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/clean:
+	$(MAKE) -f mst_color/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build.make mst_color/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/clean
+.PHONY : mst_color/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/clean
+
+# clean rule for target.
+clean: mst_color/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target mst_color/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir
+
+# All Build rule for target.
+mst_color/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/all:
+	$(MAKE) -f mst_color/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build.make mst_color/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/depend
+	$(MAKE) -f mst_color/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build.make mst_color/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles 
+	@echo "Built target dynamic_reconfigure_generate_messages_lisp"
+.PHONY : mst_color/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+mst_color/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 mst_color/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
+.PHONY : mst_color/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+dynamic_reconfigure_generate_messages_lisp: mst_color/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule
+.PHONY : dynamic_reconfigure_generate_messages_lisp
+
+# clean rule for target.
+mst_color/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/clean:
+	$(MAKE) -f mst_color/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build.make mst_color/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/clean
+.PHONY : mst_color/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/clean
+
+# clean rule for target.
+clean: mst_color/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target mst_color/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir
+
+# All Build rule for target.
+mst_color/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/all:
+	$(MAKE) -f mst_color/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build.make mst_color/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/depend
+	$(MAKE) -f mst_color/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build.make mst_color/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles 
+	@echo "Built target dynamic_reconfigure_generate_messages_py"
+.PHONY : mst_color/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+mst_color/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 mst_color/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
+.PHONY : mst_color/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule
+
+# Convenience name for target.
+dynamic_reconfigure_generate_messages_py: mst_color/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule
+.PHONY : dynamic_reconfigure_generate_messages_py
+
+# clean rule for target.
+mst_color/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/clean:
+	$(MAKE) -f mst_color/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build.make mst_color/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/clean
+.PHONY : mst_color/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/clean
+
+# clean rule for target.
+clean: mst_color/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target mst_color/CMakeFiles/geometry_msgs_generate_messages_cpp.dir
+
+# All Build rule for target.
+mst_color/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f mst_color/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make mst_color/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f mst_color/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make mst_color/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles 
+	@echo "Built target geometry_msgs_generate_messages_cpp"
+.PHONY : mst_color/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+mst_color/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 mst_color/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
+.PHONY : mst_color/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_cpp: mst_color/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+.PHONY : geometry_msgs_generate_messages_cpp
+
+# clean rule for target.
+mst_color/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f mst_color/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make mst_color/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
+.PHONY : mst_color/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
+
+# clean rule for target.
+clean: mst_color/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target mst_color/CMakeFiles/geometry_msgs_generate_messages_lisp.dir
+
+# All Build rule for target.
+mst_color/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f mst_color/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make mst_color/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f mst_color/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make mst_color/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles 
+	@echo "Built target geometry_msgs_generate_messages_lisp"
+.PHONY : mst_color/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+mst_color/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 mst_color/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
+.PHONY : mst_color/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_lisp: mst_color/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+.PHONY : geometry_msgs_generate_messages_lisp
+
+# clean rule for target.
+mst_color/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f mst_color/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make mst_color/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
+.PHONY : mst_color/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
+
+# clean rule for target.
+clean: mst_color/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target mst_color/CMakeFiles/geometry_msgs_generate_messages_py.dir
+
+# All Build rule for target.
+mst_color/CMakeFiles/geometry_msgs_generate_messages_py.dir/all:
+	$(MAKE) -f mst_color/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make mst_color/CMakeFiles/geometry_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f mst_color/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make mst_color/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles 
+	@echo "Built target geometry_msgs_generate_messages_py"
+.PHONY : mst_color/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+mst_color/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 mst_color/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
+.PHONY : mst_color/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_py: mst_color/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+.PHONY : geometry_msgs_generate_messages_py
+
+# clean rule for target.
+mst_color/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f mst_color/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make mst_color/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
+.PHONY : mst_color/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
+
+# clean rule for target.
+clean: mst_color/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target mst_color/CMakeFiles/mst_color.dir
+
+# All Build rule for target.
+mst_color/CMakeFiles/mst_color.dir/all: mst_color/CMakeFiles/mst_color_gencfg.dir/all
+	$(MAKE) -f mst_color/CMakeFiles/mst_color.dir/build.make mst_color/CMakeFiles/mst_color.dir/depend
+	$(MAKE) -f mst_color/CMakeFiles/mst_color.dir/build.make mst_color/CMakeFiles/mst_color.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles  9
+	@echo "Built target mst_color"
+.PHONY : mst_color/CMakeFiles/mst_color.dir/all
+
+# Include target in all.
+all: mst_color/CMakeFiles/mst_color.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+mst_color/CMakeFiles/mst_color.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 mst_color/CMakeFiles/mst_color.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
+.PHONY : mst_color/CMakeFiles/mst_color.dir/rule
+
+# Convenience name for target.
+mst_color: mst_color/CMakeFiles/mst_color.dir/rule
+.PHONY : mst_color
+
+# clean rule for target.
+mst_color/CMakeFiles/mst_color.dir/clean:
+	$(MAKE) -f mst_color/CMakeFiles/mst_color.dir/build.make mst_color/CMakeFiles/mst_color.dir/clean
+.PHONY : mst_color/CMakeFiles/mst_color.dir/clean
+
+# clean rule for target.
+clean: mst_color/CMakeFiles/mst_color.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target mst_color/CMakeFiles/mst_color_gencfg.dir
+
+# All Build rule for target.
+mst_color/CMakeFiles/mst_color_gencfg.dir/all:
+	$(MAKE) -f mst_color/CMakeFiles/mst_color_gencfg.dir/build.make mst_color/CMakeFiles/mst_color_gencfg.dir/depend
+	$(MAKE) -f mst_color/CMakeFiles/mst_color_gencfg.dir/build.make mst_color/CMakeFiles/mst_color_gencfg.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles  10
+	@echo "Built target mst_color_gencfg"
+.PHONY : mst_color/CMakeFiles/mst_color_gencfg.dir/all
+
+# Include target in all.
+all: mst_color/CMakeFiles/mst_color_gencfg.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+mst_color/CMakeFiles/mst_color_gencfg.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 mst_color/CMakeFiles/mst_color_gencfg.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
+.PHONY : mst_color/CMakeFiles/mst_color_gencfg.dir/rule
+
+# Convenience name for target.
+mst_color_gencfg: mst_color/CMakeFiles/mst_color_gencfg.dir/rule
+.PHONY : mst_color_gencfg
+
+# clean rule for target.
+mst_color/CMakeFiles/mst_color_gencfg.dir/clean:
+	$(MAKE) -f mst_color/CMakeFiles/mst_color_gencfg.dir/build.make mst_color/CMakeFiles/mst_color_gencfg.dir/clean
+.PHONY : mst_color/CMakeFiles/mst_color_gencfg.dir/clean
+
+# clean rule for target.
+clean: mst_color/CMakeFiles/mst_color_gencfg.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target mst_color/CMakeFiles/roscpp_generate_messages_cpp.dir
+
+# All Build rule for target.
+mst_color/CMakeFiles/roscpp_generate_messages_cpp.dir/all:
+	$(MAKE) -f mst_color/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make mst_color/CMakeFiles/roscpp_generate_messages_cpp.dir/depend
+	$(MAKE) -f mst_color/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make mst_color/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles 
+	@echo "Built target roscpp_generate_messages_cpp"
+.PHONY : mst_color/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+mst_color/CMakeFiles/roscpp_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 mst_color/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
+.PHONY : mst_color/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_cpp: mst_color/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+.PHONY : roscpp_generate_messages_cpp
+
+# clean rule for target.
+mst_color/CMakeFiles/roscpp_generate_messages_cpp.dir/clean:
+	$(MAKE) -f mst_color/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make mst_color/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
+.PHONY : mst_color/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
+
+# clean rule for target.
+clean: mst_color/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target mst_color/CMakeFiles/roscpp_generate_messages_lisp.dir
+
+# All Build rule for target.
+mst_color/CMakeFiles/roscpp_generate_messages_lisp.dir/all:
+	$(MAKE) -f mst_color/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make mst_color/CMakeFiles/roscpp_generate_messages_lisp.dir/depend
+	$(MAKE) -f mst_color/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make mst_color/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles 
+	@echo "Built target roscpp_generate_messages_lisp"
+.PHONY : mst_color/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+mst_color/CMakeFiles/roscpp_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 mst_color/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
+.PHONY : mst_color/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_lisp: mst_color/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+.PHONY : roscpp_generate_messages_lisp
+
+# clean rule for target.
+mst_color/CMakeFiles/roscpp_generate_messages_lisp.dir/clean:
+	$(MAKE) -f mst_color/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make mst_color/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
+.PHONY : mst_color/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
+
+# clean rule for target.
+clean: mst_color/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target mst_color/CMakeFiles/roscpp_generate_messages_py.dir
+
+# All Build rule for target.
+mst_color/CMakeFiles/roscpp_generate_messages_py.dir/all:
+	$(MAKE) -f mst_color/CMakeFiles/roscpp_generate_messages_py.dir/build.make mst_color/CMakeFiles/roscpp_generate_messages_py.dir/depend
+	$(MAKE) -f mst_color/CMakeFiles/roscpp_generate_messages_py.dir/build.make mst_color/CMakeFiles/roscpp_generate_messages_py.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles 
+	@echo "Built target roscpp_generate_messages_py"
+.PHONY : mst_color/CMakeFiles/roscpp_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+mst_color/CMakeFiles/roscpp_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 mst_color/CMakeFiles/roscpp_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
+.PHONY : mst_color/CMakeFiles/roscpp_generate_messages_py.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_py: mst_color/CMakeFiles/roscpp_generate_messages_py.dir/rule
+.PHONY : roscpp_generate_messages_py
+
+# clean rule for target.
+mst_color/CMakeFiles/roscpp_generate_messages_py.dir/clean:
+	$(MAKE) -f mst_color/CMakeFiles/roscpp_generate_messages_py.dir/build.make mst_color/CMakeFiles/roscpp_generate_messages_py.dir/clean
+.PHONY : mst_color/CMakeFiles/roscpp_generate_messages_py.dir/clean
+
+# clean rule for target.
+clean: mst_color/CMakeFiles/roscpp_generate_messages_py.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target mst_color/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir
+
+# All Build rule for target.
+mst_color/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f mst_color/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make mst_color/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f mst_color/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make mst_color/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles 
+	@echo "Built target rosgraph_msgs_generate_messages_cpp"
+.PHONY : mst_color/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+mst_color/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 mst_color/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
+.PHONY : mst_color/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_cpp: mst_color/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+.PHONY : rosgraph_msgs_generate_messages_cpp
+
+# clean rule for target.
+mst_color/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f mst_color/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make mst_color/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
+.PHONY : mst_color/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
+
+# clean rule for target.
+clean: mst_color/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target mst_color/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir
+
+# All Build rule for target.
+mst_color/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f mst_color/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make mst_color/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f mst_color/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make mst_color/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles 
+	@echo "Built target rosgraph_msgs_generate_messages_lisp"
+.PHONY : mst_color/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+mst_color/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 mst_color/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
+.PHONY : mst_color/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_lisp: mst_color/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+.PHONY : rosgraph_msgs_generate_messages_lisp
+
+# clean rule for target.
+mst_color/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f mst_color/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make mst_color/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
+.PHONY : mst_color/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
+
+# clean rule for target.
+clean: mst_color/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target mst_color/CMakeFiles/rosgraph_msgs_generate_messages_py.dir
+
+# All Build rule for target.
+mst_color/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all:
+	$(MAKE) -f mst_color/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make mst_color/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f mst_color/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make mst_color/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles 
+	@echo "Built target rosgraph_msgs_generate_messages_py"
+.PHONY : mst_color/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+mst_color/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 mst_color/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
+.PHONY : mst_color/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_py: mst_color/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+.PHONY : rosgraph_msgs_generate_messages_py
+
+# clean rule for target.
+mst_color/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f mst_color/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make mst_color/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
+.PHONY : mst_color/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
+
+# clean rule for target.
+clean: mst_color/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target mst_color/CMakeFiles/sensor_msgs_generate_messages_cpp.dir
+
+# All Build rule for target.
+mst_color/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f mst_color/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make mst_color/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f mst_color/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make mst_color/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles 
+	@echo "Built target sensor_msgs_generate_messages_cpp"
+.PHONY : mst_color/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+mst_color/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 mst_color/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
+.PHONY : mst_color/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_cpp: mst_color/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+.PHONY : sensor_msgs_generate_messages_cpp
+
+# clean rule for target.
+mst_color/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f mst_color/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make mst_color/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
+.PHONY : mst_color/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
+
+# clean rule for target.
+clean: mst_color/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target mst_color/CMakeFiles/sensor_msgs_generate_messages_lisp.dir
+
+# All Build rule for target.
+mst_color/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f mst_color/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make mst_color/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f mst_color/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make mst_color/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles 
+	@echo "Built target sensor_msgs_generate_messages_lisp"
+.PHONY : mst_color/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+mst_color/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 mst_color/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
+.PHONY : mst_color/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_lisp: mst_color/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+.PHONY : sensor_msgs_generate_messages_lisp
+
+# clean rule for target.
+mst_color/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f mst_color/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make mst_color/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
+.PHONY : mst_color/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
+
+# clean rule for target.
+clean: mst_color/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target mst_color/CMakeFiles/sensor_msgs_generate_messages_py.dir
+
+# All Build rule for target.
+mst_color/CMakeFiles/sensor_msgs_generate_messages_py.dir/all:
+	$(MAKE) -f mst_color/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make mst_color/CMakeFiles/sensor_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f mst_color/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make mst_color/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles 
+	@echo "Built target sensor_msgs_generate_messages_py"
+.PHONY : mst_color/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+mst_color/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 mst_color/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
+.PHONY : mst_color/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_py: mst_color/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+.PHONY : sensor_msgs_generate_messages_py
+
+# clean rule for target.
+mst_color/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f mst_color/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make mst_color/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
+.PHONY : mst_color/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
+
+# clean rule for target.
+clean: mst_color/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target mst_color/CMakeFiles/std_msgs_generate_messages_cpp.dir
+
+# All Build rule for target.
+mst_color/CMakeFiles/std_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f mst_color/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make mst_color/CMakeFiles/std_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f mst_color/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make mst_color/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles 
+	@echo "Built target std_msgs_generate_messages_cpp"
+.PHONY : mst_color/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+mst_color/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 mst_color/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
+.PHONY : mst_color/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_cpp: mst_color/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+.PHONY : std_msgs_generate_messages_cpp
+
+# clean rule for target.
+mst_color/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f mst_color/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make mst_color/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+.PHONY : mst_color/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+
+# clean rule for target.
+clean: mst_color/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target mst_color/CMakeFiles/std_msgs_generate_messages_lisp.dir
+
+# All Build rule for target.
+mst_color/CMakeFiles/std_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f mst_color/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make mst_color/CMakeFiles/std_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f mst_color/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make mst_color/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles 
+	@echo "Built target std_msgs_generate_messages_lisp"
+.PHONY : mst_color/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+mst_color/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 mst_color/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
+.PHONY : mst_color/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_lisp: mst_color/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+.PHONY : std_msgs_generate_messages_lisp
+
+# clean rule for target.
+mst_color/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f mst_color/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make mst_color/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+.PHONY : mst_color/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+
+# clean rule for target.
+clean: mst_color/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target mst_color/CMakeFiles/std_msgs_generate_messages_py.dir
+
+# All Build rule for target.
+mst_color/CMakeFiles/std_msgs_generate_messages_py.dir/all:
+	$(MAKE) -f mst_color/CMakeFiles/std_msgs_generate_messages_py.dir/build.make mst_color/CMakeFiles/std_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f mst_color/CMakeFiles/std_msgs_generate_messages_py.dir/build.make mst_color/CMakeFiles/std_msgs_generate_messages_py.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles 
+	@echo "Built target std_msgs_generate_messages_py"
+.PHONY : mst_color/CMakeFiles/std_msgs_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+mst_color/CMakeFiles/std_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 mst_color/CMakeFiles/std_msgs_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
+.PHONY : mst_color/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_py: mst_color/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+.PHONY : std_msgs_generate_messages_py
+
+# clean rule for target.
+mst_color/CMakeFiles/std_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f mst_color/CMakeFiles/std_msgs_generate_messages_py.dir/build.make mst_color/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+.PHONY : mst_color/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+
+# clean rule for target.
+clean: mst_color/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Directory level rules for directory mst_colorstat
 
 # Convenience name for "all" pass in the directory.
@@ -265,25 +1061,7 @@ mst_colorstat/all: mst_colorstat/CMakeFiles/mst_colorstat_gencfg.dir/all
 mst_colorstat/clean: mst_colorstat/CMakeFiles/ColorStat.dir/clean
 mst_colorstat/clean: mst_colorstat/CMakeFiles/ColorStat_Stat.dir/clean
 mst_colorstat/clean: mst_colorstat/CMakeFiles/ColorStat_error.dir/clean
-mst_colorstat/clean: mst_colorstat/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/clean
-mst_colorstat/clean: mst_colorstat/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/clean
-mst_colorstat/clean: mst_colorstat/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/clean
-mst_colorstat/clean: mst_colorstat/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
-mst_colorstat/clean: mst_colorstat/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
-mst_colorstat/clean: mst_colorstat/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
 mst_colorstat/clean: mst_colorstat/CMakeFiles/mst_colorstat_gencfg.dir/clean
-mst_colorstat/clean: mst_colorstat/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
-mst_colorstat/clean: mst_colorstat/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
-mst_colorstat/clean: mst_colorstat/CMakeFiles/roscpp_generate_messages_py.dir/clean
-mst_colorstat/clean: mst_colorstat/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
-mst_colorstat/clean: mst_colorstat/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
-mst_colorstat/clean: mst_colorstat/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
-mst_colorstat/clean: mst_colorstat/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
-mst_colorstat/clean: mst_colorstat/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
-mst_colorstat/clean: mst_colorstat/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
-mst_colorstat/clean: mst_colorstat/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
-mst_colorstat/clean: mst_colorstat/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
-mst_colorstat/clean: mst_colorstat/CMakeFiles/std_msgs_generate_messages_py.dir/clean
 .PHONY : mst_colorstat/clean
 
 # Convenience name for "preinstall" pass in the directory.
@@ -294,8 +1072,8 @@ mst_colorstat/preinstall:
 # Target rules for target mst_colorstat/CMakeFiles/ColorStat.dir
 
 # All Build rule for target.
-mst_colorstat/CMakeFiles/ColorStat.dir/all: mst_colorstat/CMakeFiles/ColorStat_Stat.dir/all
 mst_colorstat/CMakeFiles/ColorStat.dir/all: mst_colorstat/CMakeFiles/ColorStat_error.dir/all
+mst_colorstat/CMakeFiles/ColorStat.dir/all: mst_colorstat/CMakeFiles/ColorStat_Stat.dir/all
 	$(MAKE) -f mst_colorstat/CMakeFiles/ColorStat.dir/build.make mst_colorstat/CMakeFiles/ColorStat.dir/depend
 	$(MAKE) -f mst_colorstat/CMakeFiles/ColorStat.dir/build.make mst_colorstat/CMakeFiles/ColorStat.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles  1
@@ -397,199 +1175,13 @@ clean: mst_colorstat/CMakeFiles/ColorStat_error.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target mst_colorstat/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir
-
-# All Build rule for target.
-mst_colorstat/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/all:
-	$(MAKE) -f mst_colorstat/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build.make mst_colorstat/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/depend
-	$(MAKE) -f mst_colorstat/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build.make mst_colorstat/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles 
-	@echo "Built target dynamic_reconfigure_generate_messages_cpp"
-.PHONY : mst_colorstat/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/all
-
-# Build rule for subdir invocation for target.
-mst_colorstat/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 mst_colorstat/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
-.PHONY : mst_colorstat/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-dynamic_reconfigure_generate_messages_cpp: mst_colorstat/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule
-.PHONY : dynamic_reconfigure_generate_messages_cpp
-
-# clean rule for target.
-mst_colorstat/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/clean:
-	$(MAKE) -f mst_colorstat/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build.make mst_colorstat/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/clean
-.PHONY : mst_colorstat/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/clean
-
-# clean rule for target.
-clean: mst_colorstat/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/clean
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target mst_colorstat/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir
-
-# All Build rule for target.
-mst_colorstat/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/all:
-	$(MAKE) -f mst_colorstat/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build.make mst_colorstat/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/depend
-	$(MAKE) -f mst_colorstat/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build.make mst_colorstat/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles 
-	@echo "Built target dynamic_reconfigure_generate_messages_lisp"
-.PHONY : mst_colorstat/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/all
-
-# Build rule for subdir invocation for target.
-mst_colorstat/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 mst_colorstat/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
-.PHONY : mst_colorstat/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-dynamic_reconfigure_generate_messages_lisp: mst_colorstat/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule
-.PHONY : dynamic_reconfigure_generate_messages_lisp
-
-# clean rule for target.
-mst_colorstat/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/clean:
-	$(MAKE) -f mst_colorstat/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build.make mst_colorstat/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/clean
-.PHONY : mst_colorstat/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/clean
-
-# clean rule for target.
-clean: mst_colorstat/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/clean
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target mst_colorstat/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir
-
-# All Build rule for target.
-mst_colorstat/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/all:
-	$(MAKE) -f mst_colorstat/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build.make mst_colorstat/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/depend
-	$(MAKE) -f mst_colorstat/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build.make mst_colorstat/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles 
-	@echo "Built target dynamic_reconfigure_generate_messages_py"
-.PHONY : mst_colorstat/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/all
-
-# Build rule for subdir invocation for target.
-mst_colorstat/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 mst_colorstat/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
-.PHONY : mst_colorstat/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule
-
-# Convenience name for target.
-dynamic_reconfigure_generate_messages_py: mst_colorstat/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule
-.PHONY : dynamic_reconfigure_generate_messages_py
-
-# clean rule for target.
-mst_colorstat/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/clean:
-	$(MAKE) -f mst_colorstat/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build.make mst_colorstat/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/clean
-.PHONY : mst_colorstat/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/clean
-
-# clean rule for target.
-clean: mst_colorstat/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/clean
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target mst_colorstat/CMakeFiles/geometry_msgs_generate_messages_cpp.dir
-
-# All Build rule for target.
-mst_colorstat/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all:
-	$(MAKE) -f mst_colorstat/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make mst_colorstat/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/depend
-	$(MAKE) -f mst_colorstat/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make mst_colorstat/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles 
-	@echo "Built target geometry_msgs_generate_messages_cpp"
-.PHONY : mst_colorstat/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
-
-# Build rule for subdir invocation for target.
-mst_colorstat/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 mst_colorstat/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
-.PHONY : mst_colorstat/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_cpp: mst_colorstat/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
-.PHONY : geometry_msgs_generate_messages_cpp
-
-# clean rule for target.
-mst_colorstat/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean:
-	$(MAKE) -f mst_colorstat/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make mst_colorstat/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
-.PHONY : mst_colorstat/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
-
-# clean rule for target.
-clean: mst_colorstat/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target mst_colorstat/CMakeFiles/geometry_msgs_generate_messages_lisp.dir
-
-# All Build rule for target.
-mst_colorstat/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all:
-	$(MAKE) -f mst_colorstat/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make mst_colorstat/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/depend
-	$(MAKE) -f mst_colorstat/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make mst_colorstat/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles 
-	@echo "Built target geometry_msgs_generate_messages_lisp"
-.PHONY : mst_colorstat/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
-
-# Build rule for subdir invocation for target.
-mst_colorstat/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 mst_colorstat/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
-.PHONY : mst_colorstat/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_lisp: mst_colorstat/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
-.PHONY : geometry_msgs_generate_messages_lisp
-
-# clean rule for target.
-mst_colorstat/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean:
-	$(MAKE) -f mst_colorstat/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make mst_colorstat/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
-.PHONY : mst_colorstat/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
-
-# clean rule for target.
-clean: mst_colorstat/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target mst_colorstat/CMakeFiles/geometry_msgs_generate_messages_py.dir
-
-# All Build rule for target.
-mst_colorstat/CMakeFiles/geometry_msgs_generate_messages_py.dir/all:
-	$(MAKE) -f mst_colorstat/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make mst_colorstat/CMakeFiles/geometry_msgs_generate_messages_py.dir/depend
-	$(MAKE) -f mst_colorstat/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make mst_colorstat/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles 
-	@echo "Built target geometry_msgs_generate_messages_py"
-.PHONY : mst_colorstat/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
-
-# Build rule for subdir invocation for target.
-mst_colorstat/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 mst_colorstat/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
-.PHONY : mst_colorstat/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_py: mst_colorstat/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
-.PHONY : geometry_msgs_generate_messages_py
-
-# clean rule for target.
-mst_colorstat/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean:
-	$(MAKE) -f mst_colorstat/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make mst_colorstat/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
-.PHONY : mst_colorstat/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
-
-# clean rule for target.
-clean: mst_colorstat/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
-.PHONY : clean
-
-#=============================================================================
 # Target rules for target mst_colorstat/CMakeFiles/mst_colorstat_gencfg.dir
 
 # All Build rule for target.
 mst_colorstat/CMakeFiles/mst_colorstat_gencfg.dir/all:
 	$(MAKE) -f mst_colorstat/CMakeFiles/mst_colorstat_gencfg.dir/build.make mst_colorstat/CMakeFiles/mst_colorstat_gencfg.dir/depend
 	$(MAKE) -f mst_colorstat/CMakeFiles/mst_colorstat_gencfg.dir/build.make mst_colorstat/CMakeFiles/mst_colorstat_gencfg.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles  8
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles  11
 	@echo "Built target mst_colorstat_gencfg"
 .PHONY : mst_colorstat/CMakeFiles/mst_colorstat_gencfg.dir/all
 
@@ -615,378 +1207,6 @@ mst_colorstat/CMakeFiles/mst_colorstat_gencfg.dir/clean:
 
 # clean rule for target.
 clean: mst_colorstat/CMakeFiles/mst_colorstat_gencfg.dir/clean
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target mst_colorstat/CMakeFiles/roscpp_generate_messages_cpp.dir
-
-# All Build rule for target.
-mst_colorstat/CMakeFiles/roscpp_generate_messages_cpp.dir/all:
-	$(MAKE) -f mst_colorstat/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make mst_colorstat/CMakeFiles/roscpp_generate_messages_cpp.dir/depend
-	$(MAKE) -f mst_colorstat/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make mst_colorstat/CMakeFiles/roscpp_generate_messages_cpp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles 
-	@echo "Built target roscpp_generate_messages_cpp"
-.PHONY : mst_colorstat/CMakeFiles/roscpp_generate_messages_cpp.dir/all
-
-# Build rule for subdir invocation for target.
-mst_colorstat/CMakeFiles/roscpp_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 mst_colorstat/CMakeFiles/roscpp_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
-.PHONY : mst_colorstat/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_cpp: mst_colorstat/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-.PHONY : roscpp_generate_messages_cpp
-
-# clean rule for target.
-mst_colorstat/CMakeFiles/roscpp_generate_messages_cpp.dir/clean:
-	$(MAKE) -f mst_colorstat/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make mst_colorstat/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
-.PHONY : mst_colorstat/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
-
-# clean rule for target.
-clean: mst_colorstat/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target mst_colorstat/CMakeFiles/roscpp_generate_messages_lisp.dir
-
-# All Build rule for target.
-mst_colorstat/CMakeFiles/roscpp_generate_messages_lisp.dir/all:
-	$(MAKE) -f mst_colorstat/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make mst_colorstat/CMakeFiles/roscpp_generate_messages_lisp.dir/depend
-	$(MAKE) -f mst_colorstat/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make mst_colorstat/CMakeFiles/roscpp_generate_messages_lisp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles 
-	@echo "Built target roscpp_generate_messages_lisp"
-.PHONY : mst_colorstat/CMakeFiles/roscpp_generate_messages_lisp.dir/all
-
-# Build rule for subdir invocation for target.
-mst_colorstat/CMakeFiles/roscpp_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 mst_colorstat/CMakeFiles/roscpp_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
-.PHONY : mst_colorstat/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_lisp: mst_colorstat/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-.PHONY : roscpp_generate_messages_lisp
-
-# clean rule for target.
-mst_colorstat/CMakeFiles/roscpp_generate_messages_lisp.dir/clean:
-	$(MAKE) -f mst_colorstat/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make mst_colorstat/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
-.PHONY : mst_colorstat/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
-
-# clean rule for target.
-clean: mst_colorstat/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target mst_colorstat/CMakeFiles/roscpp_generate_messages_py.dir
-
-# All Build rule for target.
-mst_colorstat/CMakeFiles/roscpp_generate_messages_py.dir/all:
-	$(MAKE) -f mst_colorstat/CMakeFiles/roscpp_generate_messages_py.dir/build.make mst_colorstat/CMakeFiles/roscpp_generate_messages_py.dir/depend
-	$(MAKE) -f mst_colorstat/CMakeFiles/roscpp_generate_messages_py.dir/build.make mst_colorstat/CMakeFiles/roscpp_generate_messages_py.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles 
-	@echo "Built target roscpp_generate_messages_py"
-.PHONY : mst_colorstat/CMakeFiles/roscpp_generate_messages_py.dir/all
-
-# Build rule for subdir invocation for target.
-mst_colorstat/CMakeFiles/roscpp_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 mst_colorstat/CMakeFiles/roscpp_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
-.PHONY : mst_colorstat/CMakeFiles/roscpp_generate_messages_py.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_py: mst_colorstat/CMakeFiles/roscpp_generate_messages_py.dir/rule
-.PHONY : roscpp_generate_messages_py
-
-# clean rule for target.
-mst_colorstat/CMakeFiles/roscpp_generate_messages_py.dir/clean:
-	$(MAKE) -f mst_colorstat/CMakeFiles/roscpp_generate_messages_py.dir/build.make mst_colorstat/CMakeFiles/roscpp_generate_messages_py.dir/clean
-.PHONY : mst_colorstat/CMakeFiles/roscpp_generate_messages_py.dir/clean
-
-# clean rule for target.
-clean: mst_colorstat/CMakeFiles/roscpp_generate_messages_py.dir/clean
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target mst_colorstat/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir
-
-# All Build rule for target.
-mst_colorstat/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all:
-	$(MAKE) -f mst_colorstat/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make mst_colorstat/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/depend
-	$(MAKE) -f mst_colorstat/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make mst_colorstat/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles 
-	@echo "Built target rosgraph_msgs_generate_messages_cpp"
-.PHONY : mst_colorstat/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
-
-# Build rule for subdir invocation for target.
-mst_colorstat/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 mst_colorstat/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
-.PHONY : mst_colorstat/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_cpp: mst_colorstat/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-.PHONY : rosgraph_msgs_generate_messages_cpp
-
-# clean rule for target.
-mst_colorstat/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean:
-	$(MAKE) -f mst_colorstat/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make mst_colorstat/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
-.PHONY : mst_colorstat/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
-
-# clean rule for target.
-clean: mst_colorstat/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target mst_colorstat/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir
-
-# All Build rule for target.
-mst_colorstat/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all:
-	$(MAKE) -f mst_colorstat/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make mst_colorstat/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/depend
-	$(MAKE) -f mst_colorstat/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make mst_colorstat/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles 
-	@echo "Built target rosgraph_msgs_generate_messages_lisp"
-.PHONY : mst_colorstat/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
-
-# Build rule for subdir invocation for target.
-mst_colorstat/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 mst_colorstat/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
-.PHONY : mst_colorstat/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_lisp: mst_colorstat/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
-.PHONY : rosgraph_msgs_generate_messages_lisp
-
-# clean rule for target.
-mst_colorstat/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean:
-	$(MAKE) -f mst_colorstat/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make mst_colorstat/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
-.PHONY : mst_colorstat/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
-
-# clean rule for target.
-clean: mst_colorstat/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target mst_colorstat/CMakeFiles/rosgraph_msgs_generate_messages_py.dir
-
-# All Build rule for target.
-mst_colorstat/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all:
-	$(MAKE) -f mst_colorstat/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make mst_colorstat/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/depend
-	$(MAKE) -f mst_colorstat/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make mst_colorstat/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles 
-	@echo "Built target rosgraph_msgs_generate_messages_py"
-.PHONY : mst_colorstat/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
-
-# Build rule for subdir invocation for target.
-mst_colorstat/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 mst_colorstat/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
-.PHONY : mst_colorstat/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_py: mst_colorstat/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
-.PHONY : rosgraph_msgs_generate_messages_py
-
-# clean rule for target.
-mst_colorstat/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean:
-	$(MAKE) -f mst_colorstat/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make mst_colorstat/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
-.PHONY : mst_colorstat/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
-
-# clean rule for target.
-clean: mst_colorstat/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target mst_colorstat/CMakeFiles/sensor_msgs_generate_messages_cpp.dir
-
-# All Build rule for target.
-mst_colorstat/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all:
-	$(MAKE) -f mst_colorstat/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make mst_colorstat/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/depend
-	$(MAKE) -f mst_colorstat/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make mst_colorstat/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles 
-	@echo "Built target sensor_msgs_generate_messages_cpp"
-.PHONY : mst_colorstat/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
-
-# Build rule for subdir invocation for target.
-mst_colorstat/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 mst_colorstat/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
-.PHONY : mst_colorstat/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_cpp: mst_colorstat/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
-.PHONY : sensor_msgs_generate_messages_cpp
-
-# clean rule for target.
-mst_colorstat/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean:
-	$(MAKE) -f mst_colorstat/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make mst_colorstat/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
-.PHONY : mst_colorstat/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
-
-# clean rule for target.
-clean: mst_colorstat/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target mst_colorstat/CMakeFiles/sensor_msgs_generate_messages_lisp.dir
-
-# All Build rule for target.
-mst_colorstat/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all:
-	$(MAKE) -f mst_colorstat/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make mst_colorstat/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/depend
-	$(MAKE) -f mst_colorstat/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make mst_colorstat/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles 
-	@echo "Built target sensor_msgs_generate_messages_lisp"
-.PHONY : mst_colorstat/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
-
-# Build rule for subdir invocation for target.
-mst_colorstat/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 mst_colorstat/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
-.PHONY : mst_colorstat/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_lisp: mst_colorstat/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
-.PHONY : sensor_msgs_generate_messages_lisp
-
-# clean rule for target.
-mst_colorstat/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean:
-	$(MAKE) -f mst_colorstat/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make mst_colorstat/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
-.PHONY : mst_colorstat/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
-
-# clean rule for target.
-clean: mst_colorstat/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target mst_colorstat/CMakeFiles/sensor_msgs_generate_messages_py.dir
-
-# All Build rule for target.
-mst_colorstat/CMakeFiles/sensor_msgs_generate_messages_py.dir/all:
-	$(MAKE) -f mst_colorstat/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make mst_colorstat/CMakeFiles/sensor_msgs_generate_messages_py.dir/depend
-	$(MAKE) -f mst_colorstat/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make mst_colorstat/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles 
-	@echo "Built target sensor_msgs_generate_messages_py"
-.PHONY : mst_colorstat/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
-
-# Build rule for subdir invocation for target.
-mst_colorstat/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 mst_colorstat/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
-.PHONY : mst_colorstat/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_py: mst_colorstat/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
-.PHONY : sensor_msgs_generate_messages_py
-
-# clean rule for target.
-mst_colorstat/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean:
-	$(MAKE) -f mst_colorstat/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make mst_colorstat/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
-.PHONY : mst_colorstat/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
-
-# clean rule for target.
-clean: mst_colorstat/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target mst_colorstat/CMakeFiles/std_msgs_generate_messages_cpp.dir
-
-# All Build rule for target.
-mst_colorstat/CMakeFiles/std_msgs_generate_messages_cpp.dir/all:
-	$(MAKE) -f mst_colorstat/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make mst_colorstat/CMakeFiles/std_msgs_generate_messages_cpp.dir/depend
-	$(MAKE) -f mst_colorstat/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make mst_colorstat/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles 
-	@echo "Built target std_msgs_generate_messages_cpp"
-.PHONY : mst_colorstat/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-
-# Build rule for subdir invocation for target.
-mst_colorstat/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 mst_colorstat/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
-.PHONY : mst_colorstat/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_cpp: mst_colorstat/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-.PHONY : std_msgs_generate_messages_cpp
-
-# clean rule for target.
-mst_colorstat/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean:
-	$(MAKE) -f mst_colorstat/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make mst_colorstat/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
-.PHONY : mst_colorstat/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
-
-# clean rule for target.
-clean: mst_colorstat/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target mst_colorstat/CMakeFiles/std_msgs_generate_messages_lisp.dir
-
-# All Build rule for target.
-mst_colorstat/CMakeFiles/std_msgs_generate_messages_lisp.dir/all:
-	$(MAKE) -f mst_colorstat/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make mst_colorstat/CMakeFiles/std_msgs_generate_messages_lisp.dir/depend
-	$(MAKE) -f mst_colorstat/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make mst_colorstat/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles 
-	@echo "Built target std_msgs_generate_messages_lisp"
-.PHONY : mst_colorstat/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-
-# Build rule for subdir invocation for target.
-mst_colorstat/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 mst_colorstat/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
-.PHONY : mst_colorstat/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_lisp: mst_colorstat/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-.PHONY : std_msgs_generate_messages_lisp
-
-# clean rule for target.
-mst_colorstat/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean:
-	$(MAKE) -f mst_colorstat/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make mst_colorstat/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
-.PHONY : mst_colorstat/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
-
-# clean rule for target.
-clean: mst_colorstat/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target mst_colorstat/CMakeFiles/std_msgs_generate_messages_py.dir
-
-# All Build rule for target.
-mst_colorstat/CMakeFiles/std_msgs_generate_messages_py.dir/all:
-	$(MAKE) -f mst_colorstat/CMakeFiles/std_msgs_generate_messages_py.dir/build.make mst_colorstat/CMakeFiles/std_msgs_generate_messages_py.dir/depend
-	$(MAKE) -f mst_colorstat/CMakeFiles/std_msgs_generate_messages_py.dir/build.make mst_colorstat/CMakeFiles/std_msgs_generate_messages_py.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles 
-	@echo "Built target std_msgs_generate_messages_py"
-.PHONY : mst_colorstat/CMakeFiles/std_msgs_generate_messages_py.dir/all
-
-# Build rule for subdir invocation for target.
-mst_colorstat/CMakeFiles/std_msgs_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 mst_colorstat/CMakeFiles/std_msgs_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
-.PHONY : mst_colorstat/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_py: mst_colorstat/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-.PHONY : std_msgs_generate_messages_py
-
-# clean rule for target.
-mst_colorstat/CMakeFiles/std_msgs_generate_messages_py.dir/clean:
-	$(MAKE) -f mst_colorstat/CMakeFiles/std_msgs_generate_messages_py.dir/build.make mst_colorstat/CMakeFiles/std_msgs_generate_messages_py.dir/clean
-.PHONY : mst_colorstat/CMakeFiles/std_msgs_generate_messages_py.dir/clean
-
-# clean rule for target.
-clean: mst_colorstat/CMakeFiles/std_msgs_generate_messages_py.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -1128,9 +1348,9 @@ clean: mst_estop/CMakeFiles/mst_estop_gencpp.dir/clean
 # Target rules for target mst_estop/CMakeFiles/mst_estop_generate_messages.dir
 
 # All Build rule for target.
+mst_estop/CMakeFiles/mst_estop_generate_messages.dir/all: mst_estop/CMakeFiles/mst_estop_generate_messages_lisp.dir/all
 mst_estop/CMakeFiles/mst_estop_generate_messages.dir/all: mst_estop/CMakeFiles/mst_estop_generate_messages_cpp.dir/all
 mst_estop/CMakeFiles/mst_estop_generate_messages.dir/all: mst_estop/CMakeFiles/mst_estop_generate_messages_py.dir/all
-mst_estop/CMakeFiles/mst_estop_generate_messages.dir/all: mst_estop/CMakeFiles/mst_estop_generate_messages_lisp.dir/all
 	$(MAKE) -f mst_estop/CMakeFiles/mst_estop_generate_messages.dir/build.make mst_estop/CMakeFiles/mst_estop_generate_messages.dir/depend
 	$(MAKE) -f mst_estop/CMakeFiles/mst_estop_generate_messages.dir/build.make mst_estop/CMakeFiles/mst_estop_generate_messages.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles 
@@ -1165,10 +1385,10 @@ clean: mst_estop/CMakeFiles/mst_estop_generate_messages.dir/clean
 # Target rules for target mst_estop/CMakeFiles/mst_estop_generate_messages_cpp.dir
 
 # All Build rule for target.
-mst_estop/CMakeFiles/mst_estop_generate_messages_cpp.dir/all: mst_colorstat/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+mst_estop/CMakeFiles/mst_estop_generate_messages_cpp.dir/all: mst_color/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 	$(MAKE) -f mst_estop/CMakeFiles/mst_estop_generate_messages_cpp.dir/build.make mst_estop/CMakeFiles/mst_estop_generate_messages_cpp.dir/depend
 	$(MAKE) -f mst_estop/CMakeFiles/mst_estop_generate_messages_cpp.dir/build.make mst_estop/CMakeFiles/mst_estop_generate_messages_cpp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles  9 10
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles  12 13
 	@echo "Built target mst_estop_generate_messages_cpp"
 .PHONY : mst_estop/CMakeFiles/mst_estop_generate_messages_cpp.dir/all
 
@@ -1196,10 +1416,10 @@ clean: mst_estop/CMakeFiles/mst_estop_generate_messages_cpp.dir/clean
 # Target rules for target mst_estop/CMakeFiles/mst_estop_generate_messages_lisp.dir
 
 # All Build rule for target.
-mst_estop/CMakeFiles/mst_estop_generate_messages_lisp.dir/all: mst_colorstat/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+mst_estop/CMakeFiles/mst_estop_generate_messages_lisp.dir/all: mst_color/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 	$(MAKE) -f mst_estop/CMakeFiles/mst_estop_generate_messages_lisp.dir/build.make mst_estop/CMakeFiles/mst_estop_generate_messages_lisp.dir/depend
 	$(MAKE) -f mst_estop/CMakeFiles/mst_estop_generate_messages_lisp.dir/build.make mst_estop/CMakeFiles/mst_estop_generate_messages_lisp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles  11 12
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles  14 15
 	@echo "Built target mst_estop_generate_messages_lisp"
 .PHONY : mst_estop/CMakeFiles/mst_estop_generate_messages_lisp.dir/all
 
@@ -1227,10 +1447,10 @@ clean: mst_estop/CMakeFiles/mst_estop_generate_messages_lisp.dir/clean
 # Target rules for target mst_estop/CMakeFiles/mst_estop_generate_messages_py.dir
 
 # All Build rule for target.
-mst_estop/CMakeFiles/mst_estop_generate_messages_py.dir/all: mst_colorstat/CMakeFiles/std_msgs_generate_messages_py.dir/all
+mst_estop/CMakeFiles/mst_estop_generate_messages_py.dir/all: mst_color/CMakeFiles/std_msgs_generate_messages_py.dir/all
 	$(MAKE) -f mst_estop/CMakeFiles/mst_estop_generate_messages_py.dir/build.make mst_estop/CMakeFiles/mst_estop_generate_messages_py.dir/depend
 	$(MAKE) -f mst_estop/CMakeFiles/mst_estop_generate_messages_py.dir/build.make mst_estop/CMakeFiles/mst_estop_generate_messages_py.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles  13 14 15
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles  16 17 18
 	@echo "Built target mst_estop_generate_messages_py"
 .PHONY : mst_estop/CMakeFiles/mst_estop_generate_messages_py.dir/all
 
@@ -1346,7 +1566,7 @@ mst_midg/preinstall:
 mst_midg/CMakeFiles/mst_midg.dir/all: mst_midg/CMakeFiles/mst_midg_gencpp.dir/all
 	$(MAKE) -f mst_midg/CMakeFiles/mst_midg.dir/build.make mst_midg/CMakeFiles/mst_midg.dir/depend
 	$(MAKE) -f mst_midg/CMakeFiles/mst_midg.dir/build.make mst_midg/CMakeFiles/mst_midg.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles  16 17
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles  19 20
 	@echo "Built target mst_midg"
 .PHONY : mst_midg/CMakeFiles/mst_midg.dir/all
 
@@ -1409,8 +1629,8 @@ clean: mst_midg/CMakeFiles/mst_midg_gencpp.dir/clean
 # Target rules for target mst_midg/CMakeFiles/mst_midg_generate_messages.dir
 
 # All Build rule for target.
-mst_midg/CMakeFiles/mst_midg_generate_messages.dir/all: mst_midg/CMakeFiles/mst_midg_generate_messages_cpp.dir/all
 mst_midg/CMakeFiles/mst_midg_generate_messages.dir/all: mst_midg/CMakeFiles/mst_midg_generate_messages_lisp.dir/all
+mst_midg/CMakeFiles/mst_midg_generate_messages.dir/all: mst_midg/CMakeFiles/mst_midg_generate_messages_cpp.dir/all
 mst_midg/CMakeFiles/mst_midg_generate_messages.dir/all: mst_midg/CMakeFiles/mst_midg_generate_messages_py.dir/all
 	$(MAKE) -f mst_midg/CMakeFiles/mst_midg_generate_messages.dir/build.make mst_midg/CMakeFiles/mst_midg_generate_messages.dir/depend
 	$(MAKE) -f mst_midg/CMakeFiles/mst_midg_generate_messages.dir/build.make mst_midg/CMakeFiles/mst_midg_generate_messages.dir/build
@@ -1446,11 +1666,11 @@ clean: mst_midg/CMakeFiles/mst_midg_generate_messages.dir/clean
 # Target rules for target mst_midg/CMakeFiles/mst_midg_generate_messages_cpp.dir
 
 # All Build rule for target.
-mst_midg/CMakeFiles/mst_midg_generate_messages_cpp.dir/all: mst_colorstat/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
-mst_midg/CMakeFiles/mst_midg_generate_messages_cpp.dir/all: mst_colorstat/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+mst_midg/CMakeFiles/mst_midg_generate_messages_cpp.dir/all: mst_color/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
+mst_midg/CMakeFiles/mst_midg_generate_messages_cpp.dir/all: mst_color/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 	$(MAKE) -f mst_midg/CMakeFiles/mst_midg_generate_messages_cpp.dir/build.make mst_midg/CMakeFiles/mst_midg_generate_messages_cpp.dir/depend
 	$(MAKE) -f mst_midg/CMakeFiles/mst_midg_generate_messages_cpp.dir/build.make mst_midg/CMakeFiles/mst_midg_generate_messages_cpp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles  18
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles  21
 	@echo "Built target mst_midg_generate_messages_cpp"
 .PHONY : mst_midg/CMakeFiles/mst_midg_generate_messages_cpp.dir/all
 
@@ -1478,11 +1698,11 @@ clean: mst_midg/CMakeFiles/mst_midg_generate_messages_cpp.dir/clean
 # Target rules for target mst_midg/CMakeFiles/mst_midg_generate_messages_lisp.dir
 
 # All Build rule for target.
-mst_midg/CMakeFiles/mst_midg_generate_messages_lisp.dir/all: mst_colorstat/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
-mst_midg/CMakeFiles/mst_midg_generate_messages_lisp.dir/all: mst_colorstat/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+mst_midg/CMakeFiles/mst_midg_generate_messages_lisp.dir/all: mst_color/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+mst_midg/CMakeFiles/mst_midg_generate_messages_lisp.dir/all: mst_color/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
 	$(MAKE) -f mst_midg/CMakeFiles/mst_midg_generate_messages_lisp.dir/build.make mst_midg/CMakeFiles/mst_midg_generate_messages_lisp.dir/depend
 	$(MAKE) -f mst_midg/CMakeFiles/mst_midg_generate_messages_lisp.dir/build.make mst_midg/CMakeFiles/mst_midg_generate_messages_lisp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles  19
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles  22
 	@echo "Built target mst_midg_generate_messages_lisp"
 .PHONY : mst_midg/CMakeFiles/mst_midg_generate_messages_lisp.dir/all
 
@@ -1510,11 +1730,11 @@ clean: mst_midg/CMakeFiles/mst_midg_generate_messages_lisp.dir/clean
 # Target rules for target mst_midg/CMakeFiles/mst_midg_generate_messages_py.dir
 
 # All Build rule for target.
-mst_midg/CMakeFiles/mst_midg_generate_messages_py.dir/all: mst_colorstat/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
-mst_midg/CMakeFiles/mst_midg_generate_messages_py.dir/all: mst_colorstat/CMakeFiles/std_msgs_generate_messages_py.dir/all
+mst_midg/CMakeFiles/mst_midg_generate_messages_py.dir/all: mst_color/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
+mst_midg/CMakeFiles/mst_midg_generate_messages_py.dir/all: mst_color/CMakeFiles/std_msgs_generate_messages_py.dir/all
 	$(MAKE) -f mst_midg/CMakeFiles/mst_midg_generate_messages_py.dir/build.make mst_midg/CMakeFiles/mst_midg_generate_messages_py.dir/depend
 	$(MAKE) -f mst_midg/CMakeFiles/mst_midg_generate_messages_py.dir/build.make mst_midg/CMakeFiles/mst_midg_generate_messages_py.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles  20 21
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles  23 24
 	@echo "Built target mst_midg_generate_messages_py"
 .PHONY : mst_midg/CMakeFiles/mst_midg_generate_messages_py.dir/all
 
@@ -1616,9 +1836,6 @@ mst_position/clean: mst_position/CMakeFiles/actionlib_generate_messages_py.dir/c
 mst_position/clean: mst_position/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/clean
 mst_position/clean: mst_position/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/clean
 mst_position/clean: mst_position/CMakeFiles/actionlib_msgs_generate_messages_py.dir/clean
-mst_position/clean: mst_position/CMakeFiles/driver_base_generate_messages_cpp.dir/clean
-mst_position/clean: mst_position/CMakeFiles/driver_base_generate_messages_lisp.dir/clean
-mst_position/clean: mst_position/CMakeFiles/driver_base_generate_messages_py.dir/clean
 mst_position/clean: mst_position/CMakeFiles/mst_position.dir/clean
 mst_position/clean: mst_position/CMakeFiles/mst_position_gencfg.dir/clean
 mst_position/clean: mst_position/CMakeFiles/mst_position_gencpp.dir/clean
@@ -1830,99 +2047,6 @@ clean: mst_position/CMakeFiles/actionlib_msgs_generate_messages_py.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target mst_position/CMakeFiles/driver_base_generate_messages_cpp.dir
-
-# All Build rule for target.
-mst_position/CMakeFiles/driver_base_generate_messages_cpp.dir/all:
-	$(MAKE) -f mst_position/CMakeFiles/driver_base_generate_messages_cpp.dir/build.make mst_position/CMakeFiles/driver_base_generate_messages_cpp.dir/depend
-	$(MAKE) -f mst_position/CMakeFiles/driver_base_generate_messages_cpp.dir/build.make mst_position/CMakeFiles/driver_base_generate_messages_cpp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles 
-	@echo "Built target driver_base_generate_messages_cpp"
-.PHONY : mst_position/CMakeFiles/driver_base_generate_messages_cpp.dir/all
-
-# Build rule for subdir invocation for target.
-mst_position/CMakeFiles/driver_base_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 mst_position/CMakeFiles/driver_base_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
-.PHONY : mst_position/CMakeFiles/driver_base_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-driver_base_generate_messages_cpp: mst_position/CMakeFiles/driver_base_generate_messages_cpp.dir/rule
-.PHONY : driver_base_generate_messages_cpp
-
-# clean rule for target.
-mst_position/CMakeFiles/driver_base_generate_messages_cpp.dir/clean:
-	$(MAKE) -f mst_position/CMakeFiles/driver_base_generate_messages_cpp.dir/build.make mst_position/CMakeFiles/driver_base_generate_messages_cpp.dir/clean
-.PHONY : mst_position/CMakeFiles/driver_base_generate_messages_cpp.dir/clean
-
-# clean rule for target.
-clean: mst_position/CMakeFiles/driver_base_generate_messages_cpp.dir/clean
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target mst_position/CMakeFiles/driver_base_generate_messages_lisp.dir
-
-# All Build rule for target.
-mst_position/CMakeFiles/driver_base_generate_messages_lisp.dir/all:
-	$(MAKE) -f mst_position/CMakeFiles/driver_base_generate_messages_lisp.dir/build.make mst_position/CMakeFiles/driver_base_generate_messages_lisp.dir/depend
-	$(MAKE) -f mst_position/CMakeFiles/driver_base_generate_messages_lisp.dir/build.make mst_position/CMakeFiles/driver_base_generate_messages_lisp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles 
-	@echo "Built target driver_base_generate_messages_lisp"
-.PHONY : mst_position/CMakeFiles/driver_base_generate_messages_lisp.dir/all
-
-# Build rule for subdir invocation for target.
-mst_position/CMakeFiles/driver_base_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 mst_position/CMakeFiles/driver_base_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
-.PHONY : mst_position/CMakeFiles/driver_base_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-driver_base_generate_messages_lisp: mst_position/CMakeFiles/driver_base_generate_messages_lisp.dir/rule
-.PHONY : driver_base_generate_messages_lisp
-
-# clean rule for target.
-mst_position/CMakeFiles/driver_base_generate_messages_lisp.dir/clean:
-	$(MAKE) -f mst_position/CMakeFiles/driver_base_generate_messages_lisp.dir/build.make mst_position/CMakeFiles/driver_base_generate_messages_lisp.dir/clean
-.PHONY : mst_position/CMakeFiles/driver_base_generate_messages_lisp.dir/clean
-
-# clean rule for target.
-clean: mst_position/CMakeFiles/driver_base_generate_messages_lisp.dir/clean
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target mst_position/CMakeFiles/driver_base_generate_messages_py.dir
-
-# All Build rule for target.
-mst_position/CMakeFiles/driver_base_generate_messages_py.dir/all:
-	$(MAKE) -f mst_position/CMakeFiles/driver_base_generate_messages_py.dir/build.make mst_position/CMakeFiles/driver_base_generate_messages_py.dir/depend
-	$(MAKE) -f mst_position/CMakeFiles/driver_base_generate_messages_py.dir/build.make mst_position/CMakeFiles/driver_base_generate_messages_py.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles 
-	@echo "Built target driver_base_generate_messages_py"
-.PHONY : mst_position/CMakeFiles/driver_base_generate_messages_py.dir/all
-
-# Build rule for subdir invocation for target.
-mst_position/CMakeFiles/driver_base_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 mst_position/CMakeFiles/driver_base_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/enterprise/enterprise_ws/build/CMakeFiles 0
-.PHONY : mst_position/CMakeFiles/driver_base_generate_messages_py.dir/rule
-
-# Convenience name for target.
-driver_base_generate_messages_py: mst_position/CMakeFiles/driver_base_generate_messages_py.dir/rule
-.PHONY : driver_base_generate_messages_py
-
-# clean rule for target.
-mst_position/CMakeFiles/driver_base_generate_messages_py.dir/clean:
-	$(MAKE) -f mst_position/CMakeFiles/driver_base_generate_messages_py.dir/build.make mst_position/CMakeFiles/driver_base_generate_messages_py.dir/clean
-.PHONY : mst_position/CMakeFiles/driver_base_generate_messages_py.dir/clean
-
-# clean rule for target.
-clean: mst_position/CMakeFiles/driver_base_generate_messages_py.dir/clean
-.PHONY : clean
-
-#=============================================================================
 # Target rules for target mst_position/CMakeFiles/mst_position.dir
 
 # All Build rule for target.
@@ -1930,7 +2054,7 @@ mst_position/CMakeFiles/mst_position.dir/all: mst_position/CMakeFiles/mst_positi
 mst_position/CMakeFiles/mst_position.dir/all: mst_position/CMakeFiles/mst_position_gencfg.dir/all
 	$(MAKE) -f mst_position/CMakeFiles/mst_position.dir/build.make mst_position/CMakeFiles/mst_position.dir/depend
 	$(MAKE) -f mst_position/CMakeFiles/mst_position.dir/build.make mst_position/CMakeFiles/mst_position.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles  24
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles  27
 	@echo "Built target mst_position"
 .PHONY : mst_position/CMakeFiles/mst_position.dir/all
 
@@ -1965,7 +2089,7 @@ clean: mst_position/CMakeFiles/mst_position.dir/clean
 mst_position/CMakeFiles/mst_position_gencfg.dir/all:
 	$(MAKE) -f mst_position/CMakeFiles/mst_position_gencfg.dir/build.make mst_position/CMakeFiles/mst_position_gencfg.dir/depend
 	$(MAKE) -f mst_position/CMakeFiles/mst_position_gencfg.dir/build.make mst_position/CMakeFiles/mst_position_gencfg.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles  25
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles  28
 	@echo "Built target mst_position_gencfg"
 .PHONY : mst_position/CMakeFiles/mst_position_gencfg.dir/all
 
@@ -2028,8 +2152,8 @@ clean: mst_position/CMakeFiles/mst_position_gencpp.dir/clean
 # Target rules for target mst_position/CMakeFiles/mst_position_generate_messages.dir
 
 # All Build rule for target.
-mst_position/CMakeFiles/mst_position_generate_messages.dir/all: mst_position/CMakeFiles/mst_position_generate_messages_cpp.dir/all
 mst_position/CMakeFiles/mst_position_generate_messages.dir/all: mst_position/CMakeFiles/mst_position_generate_messages_lisp.dir/all
+mst_position/CMakeFiles/mst_position_generate_messages.dir/all: mst_position/CMakeFiles/mst_position_generate_messages_cpp.dir/all
 mst_position/CMakeFiles/mst_position_generate_messages.dir/all: mst_position/CMakeFiles/mst_position_generate_messages_py.dir/all
 	$(MAKE) -f mst_position/CMakeFiles/mst_position_generate_messages.dir/build.make mst_position/CMakeFiles/mst_position_generate_messages.dir/depend
 	$(MAKE) -f mst_position/CMakeFiles/mst_position_generate_messages.dir/build.make mst_position/CMakeFiles/mst_position_generate_messages.dir/build
@@ -2065,13 +2189,13 @@ clean: mst_position/CMakeFiles/mst_position_generate_messages.dir/clean
 # Target rules for target mst_position/CMakeFiles/mst_position_generate_messages_cpp.dir
 
 # All Build rule for target.
-mst_position/CMakeFiles/mst_position_generate_messages_cpp.dir/all: mst_colorstat/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
-mst_position/CMakeFiles/mst_position_generate_messages_cpp.dir/all: mst_colorstat/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-mst_position/CMakeFiles/mst_position_generate_messages_cpp.dir/all: mst_colorstat/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+mst_position/CMakeFiles/mst_position_generate_messages_cpp.dir/all: mst_color/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
+mst_position/CMakeFiles/mst_position_generate_messages_cpp.dir/all: mst_color/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+mst_position/CMakeFiles/mst_position_generate_messages_cpp.dir/all: mst_color/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 mst_position/CMakeFiles/mst_position_generate_messages_cpp.dir/all: mst_position/CMakeFiles/nav_msgs_generate_messages_cpp.dir/all
 	$(MAKE) -f mst_position/CMakeFiles/mst_position_generate_messages_cpp.dir/build.make mst_position/CMakeFiles/mst_position_generate_messages_cpp.dir/depend
 	$(MAKE) -f mst_position/CMakeFiles/mst_position_generate_messages_cpp.dir/build.make mst_position/CMakeFiles/mst_position_generate_messages_cpp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles  26 27 28 29
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles  29 30 31 32
 	@echo "Built target mst_position_generate_messages_cpp"
 .PHONY : mst_position/CMakeFiles/mst_position_generate_messages_cpp.dir/all
 
@@ -2099,13 +2223,13 @@ clean: mst_position/CMakeFiles/mst_position_generate_messages_cpp.dir/clean
 # Target rules for target mst_position/CMakeFiles/mst_position_generate_messages_lisp.dir
 
 # All Build rule for target.
-mst_position/CMakeFiles/mst_position_generate_messages_lisp.dir/all: mst_colorstat/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
-mst_position/CMakeFiles/mst_position_generate_messages_lisp.dir/all: mst_colorstat/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
-mst_position/CMakeFiles/mst_position_generate_messages_lisp.dir/all: mst_colorstat/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+mst_position/CMakeFiles/mst_position_generate_messages_lisp.dir/all: mst_color/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+mst_position/CMakeFiles/mst_position_generate_messages_lisp.dir/all: mst_color/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+mst_position/CMakeFiles/mst_position_generate_messages_lisp.dir/all: mst_color/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
 mst_position/CMakeFiles/mst_position_generate_messages_lisp.dir/all: mst_position/CMakeFiles/nav_msgs_generate_messages_lisp.dir/all
 	$(MAKE) -f mst_position/CMakeFiles/mst_position_generate_messages_lisp.dir/build.make mst_position/CMakeFiles/mst_position_generate_messages_lisp.dir/depend
 	$(MAKE) -f mst_position/CMakeFiles/mst_position_generate_messages_lisp.dir/build.make mst_position/CMakeFiles/mst_position_generate_messages_lisp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles  30 31 32 33
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles  33 34 35 36
 	@echo "Built target mst_position_generate_messages_lisp"
 .PHONY : mst_position/CMakeFiles/mst_position_generate_messages_lisp.dir/all
 
@@ -2133,13 +2257,13 @@ clean: mst_position/CMakeFiles/mst_position_generate_messages_lisp.dir/clean
 # Target rules for target mst_position/CMakeFiles/mst_position_generate_messages_py.dir
 
 # All Build rule for target.
-mst_position/CMakeFiles/mst_position_generate_messages_py.dir/all: mst_colorstat/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
-mst_position/CMakeFiles/mst_position_generate_messages_py.dir/all: mst_colorstat/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
-mst_position/CMakeFiles/mst_position_generate_messages_py.dir/all: mst_colorstat/CMakeFiles/std_msgs_generate_messages_py.dir/all
+mst_position/CMakeFiles/mst_position_generate_messages_py.dir/all: mst_color/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
+mst_position/CMakeFiles/mst_position_generate_messages_py.dir/all: mst_color/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
+mst_position/CMakeFiles/mst_position_generate_messages_py.dir/all: mst_color/CMakeFiles/std_msgs_generate_messages_py.dir/all
 mst_position/CMakeFiles/mst_position_generate_messages_py.dir/all: mst_position/CMakeFiles/nav_msgs_generate_messages_py.dir/all
 	$(MAKE) -f mst_position/CMakeFiles/mst_position_generate_messages_py.dir/build.make mst_position/CMakeFiles/mst_position_generate_messages_py.dir/depend
 	$(MAKE) -f mst_position/CMakeFiles/mst_position_generate_messages_py.dir/build.make mst_position/CMakeFiles/mst_position_generate_messages_py.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles  34 35 36 37 38 39
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles  37 38 39 40 41 42
 	@echo "Built target mst_position_generate_messages_py"
 .PHONY : mst_position/CMakeFiles/mst_position_generate_messages_py.dir/all
 
@@ -2528,7 +2652,7 @@ mst_navigation/preinstall:
 mst_navigation/CMakeFiles/mst_navigation.dir/all: mst_navigation/CMakeFiles/mst_navigation_gencfg.dir/all
 	$(MAKE) -f mst_navigation/CMakeFiles/mst_navigation.dir/build.make mst_navigation/CMakeFiles/mst_navigation.dir/depend
 	$(MAKE) -f mst_navigation/CMakeFiles/mst_navigation.dir/build.make mst_navigation/CMakeFiles/mst_navigation.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles  22
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles  25
 	@echo "Built target mst_navigation"
 .PHONY : mst_navigation/CMakeFiles/mst_navigation.dir/all
 
@@ -2563,7 +2687,7 @@ clean: mst_navigation/CMakeFiles/mst_navigation.dir/clean
 mst_navigation/CMakeFiles/mst_navigation_gencfg.dir/all:
 	$(MAKE) -f mst_navigation/CMakeFiles/mst_navigation_gencfg.dir/build.make mst_navigation/CMakeFiles/mst_navigation_gencfg.dir/depend
 	$(MAKE) -f mst_navigation/CMakeFiles/mst_navigation_gencfg.dir/build.make mst_navigation/CMakeFiles/mst_navigation_gencfg.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles  23
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles  26
 	@echo "Built target mst_navigation_gencfg"
 .PHONY : mst_navigation/CMakeFiles/mst_navigation_gencfg.dir/all
 
@@ -2615,7 +2739,7 @@ robot_setup_tf/preinstall:
 robot_setup_tf/CMakeFiles/tf_broadcaster.dir/all:
 	$(MAKE) -f robot_setup_tf/CMakeFiles/tf_broadcaster.dir/build.make robot_setup_tf/CMakeFiles/tf_broadcaster.dir/depend
 	$(MAKE) -f robot_setup_tf/CMakeFiles/tf_broadcaster.dir/build.make robot_setup_tf/CMakeFiles/tf_broadcaster.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles  40
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles  43
 	@echo "Built target tf_broadcaster"
 .PHONY : robot_setup_tf/CMakeFiles/tf_broadcaster.dir/all
 
@@ -2650,7 +2774,7 @@ clean: robot_setup_tf/CMakeFiles/tf_broadcaster.dir/clean
 robot_setup_tf/CMakeFiles/tf_listener.dir/all:
 	$(MAKE) -f robot_setup_tf/CMakeFiles/tf_listener.dir/build.make robot_setup_tf/CMakeFiles/tf_listener.dir/depend
 	$(MAKE) -f robot_setup_tf/CMakeFiles/tf_listener.dir/build.make robot_setup_tf/CMakeFiles/tf_listener.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles  41
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/enterprise/enterprise_ws/build/CMakeFiles  44
 	@echo "Built target tf_listener"
 .PHONY : robot_setup_tf/CMakeFiles/tf_listener.dir/all
 

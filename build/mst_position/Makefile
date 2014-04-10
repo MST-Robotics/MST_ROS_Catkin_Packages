@@ -231,48 +231,6 @@ actionlib_msgs_generate_messages_py/fast:
 .PHONY : actionlib_msgs_generate_messages_py/fast
 
 # Convenience name for target.
-mst_position/CMakeFiles/driver_base_generate_messages_cpp.dir/rule:
-	cd /home/enterprise/enterprise_ws/build && $(MAKE) -f CMakeFiles/Makefile2 mst_position/CMakeFiles/driver_base_generate_messages_cpp.dir/rule
-.PHONY : mst_position/CMakeFiles/driver_base_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-driver_base_generate_messages_cpp: mst_position/CMakeFiles/driver_base_generate_messages_cpp.dir/rule
-.PHONY : driver_base_generate_messages_cpp
-
-# fast build rule for target.
-driver_base_generate_messages_cpp/fast:
-	cd /home/enterprise/enterprise_ws/build && $(MAKE) -f mst_position/CMakeFiles/driver_base_generate_messages_cpp.dir/build.make mst_position/CMakeFiles/driver_base_generate_messages_cpp.dir/build
-.PHONY : driver_base_generate_messages_cpp/fast
-
-# Convenience name for target.
-mst_position/CMakeFiles/driver_base_generate_messages_lisp.dir/rule:
-	cd /home/enterprise/enterprise_ws/build && $(MAKE) -f CMakeFiles/Makefile2 mst_position/CMakeFiles/driver_base_generate_messages_lisp.dir/rule
-.PHONY : mst_position/CMakeFiles/driver_base_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-driver_base_generate_messages_lisp: mst_position/CMakeFiles/driver_base_generate_messages_lisp.dir/rule
-.PHONY : driver_base_generate_messages_lisp
-
-# fast build rule for target.
-driver_base_generate_messages_lisp/fast:
-	cd /home/enterprise/enterprise_ws/build && $(MAKE) -f mst_position/CMakeFiles/driver_base_generate_messages_lisp.dir/build.make mst_position/CMakeFiles/driver_base_generate_messages_lisp.dir/build
-.PHONY : driver_base_generate_messages_lisp/fast
-
-# Convenience name for target.
-mst_position/CMakeFiles/driver_base_generate_messages_py.dir/rule:
-	cd /home/enterprise/enterprise_ws/build && $(MAKE) -f CMakeFiles/Makefile2 mst_position/CMakeFiles/driver_base_generate_messages_py.dir/rule
-.PHONY : mst_position/CMakeFiles/driver_base_generate_messages_py.dir/rule
-
-# Convenience name for target.
-driver_base_generate_messages_py: mst_position/CMakeFiles/driver_base_generate_messages_py.dir/rule
-.PHONY : driver_base_generate_messages_py
-
-# fast build rule for target.
-driver_base_generate_messages_py/fast:
-	cd /home/enterprise/enterprise_ws/build && $(MAKE) -f mst_position/CMakeFiles/driver_base_generate_messages_py.dir/build.make mst_position/CMakeFiles/driver_base_generate_messages_py.dir/build
-.PHONY : driver_base_generate_messages_py/fast
-
-# Convenience name for target.
 mst_position/CMakeFiles/mst_position.dir/rule:
 	cd /home/enterprise/enterprise_ws/build && $(MAKE) -f CMakeFiles/Makefile2 mst_position/CMakeFiles/mst_position.dir/rule
 .PHONY : mst_position/CMakeFiles/mst_position.dir/rule
@@ -560,9 +518,6 @@ help:
 	@echo "... actionlib_msgs_generate_messages_cpp"
 	@echo "... actionlib_msgs_generate_messages_lisp"
 	@echo "... actionlib_msgs_generate_messages_py"
-	@echo "... driver_base_generate_messages_cpp"
-	@echo "... driver_base_generate_messages_lisp"
-	@echo "... driver_base_generate_messages_py"
 	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... install/local"

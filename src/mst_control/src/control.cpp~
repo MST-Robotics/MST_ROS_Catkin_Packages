@@ -248,7 +248,7 @@ int main(int argc, char **argv)
     
     xbox_state_sub = n.subscribe("/joy", 100, xbox_callback);
     
-    estop_sub = n.subscribe("/EStop" ,100 , estop_callback);
+    //estop_sub = n.subscribe("/EStop" ,100 , estop_callback);
      
     motor_pub = n.advertise<geometry_msgs::Twist>("cmd_vel" ,100);
     

@@ -121,7 +121,7 @@ void imageCallback(const sensor_msgs::ImageConstPtr& msg)
         //~ error1.out2.rgb[j][stat1.xMin][2] = 255;
         //~ error1.out2.rgb[j][stat1.xMax][2] = 255;
     //~ }
-	cv::rectangle(out, cv::Point(stat1.xMin,480 - stat1.yMax), cv::Point(stat1.xMax,480 - stat1.yMin), cv::Scalar(0,0,255) ,3);    
+	  cv::rectangle(out, cv::Point(stat1.xMin,480 - stat1.yMax), cv::Point(stat1.xMax,480 - stat1.yMin), cv::Scalar(0,0,255) ,3);    
 	
     out_msg.header = cv_ptr_src->header;
     out_msg.encoding = "rgb8";

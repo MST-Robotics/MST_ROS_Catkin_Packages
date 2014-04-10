@@ -1,3 +1,137 @@
-<launch>
-  <node name="talker" pkg="rospy_tutorials" type="talker" />
+<launch> 
+ 
+ 
+     <!-- Define arguments and defaults  -->
+    <arg name="rviz" default="0" />
+    <arg name="wiimote" default="0" />
+    <arg name="joy" defualt="1"/>
+    <arg name="sound" default="0" />
+    <arg name="config" default="1" />
+    <arg name="usb" default="0" />
+    <arg name="robot" default="1" />
+    <arg name="joint_gui" default="1" />
+
+ 
+ 
+ 
+    <!-- launch rviz if requested -->
+    <node name="rviz_robot" pkg="rviz" type="rviz" args="-d $(find mst_control)/vcg/enterprise.vcg" if="$(arg rviz)"/>
+    
+    <node pkg="joy" type="joy_node" name="joy_node_robot" respawn="true" if="$(arg joy)"/>
+    
+    <!-- launch wiimote node if requesed -->
+    <node pkg="wiimote" type="wiimote_node.py" name="wiimote_robot" respawn="true" if="$(arg wiimote)"/>
+    
+    <!-- launch soud play for speach syth if requested -->
+    <node pkg="sound_play" type="soundplay_node.py" name="sound_play_robot" if="$(arg sound)"/>
+    
+    <!-- launch the dynamic reconfigure gui  -->
+    <node pkg="dynamic_reconfigure" type="reconfigure_gui" name="reconfigure_gui_robot" if="$(arg config)" />
+    
+    
+    <!-- launch control and load yaml making it requied for the rest of the code  -->
+    <node pkg="mst_control" type="control" name="control"  required="true" >
+        
+        <!--rosparam file="$(find MST_Control)/yaml/Control.yaml" command="load" /-->
+        
+
+    </node>
+    
+    
+    
+    <!-- launch potential navigation    -->
+    <node pkg="mst-navigation" type="mst_navigation" name="mst_navigation" >
+    
+        <!-- load parameters into parameter server  -->
+        <!--rosparam file="$(find MST_Control)/yaml/Pot_Nav.yaml" command="load" /-->
+
+    </node>
+    
+
+    <!-- launch position and load the yaml file  -->
+    <node pkg="mst_position" type="mst_position" name="mst_position" >
+        
+        <!--rosparam file="$(find MST_Control)/yaml/Carrot.yaml" command="load" /-->
+        
+    </node>
+    
+
+    <!--  launch usb camera driver and color proc  -->
+    <group if="$(arg usb)">
+    
+    	<include file="$(find mst_control)/launch/uvc.launch"  />
+        
+        
+        <node pkg="image_proc" type="image_proc" name="image_proc" ns="ptgrey"  />  
+        
+    	</node>
+    	
+    	
+    	<node pkg="mst_colorstat" type="ColorStat" name="ColorStat" args= "image:=ptgrey/image_raw" >
+        	
+    		<!--rosparam file="$(find MST_Control)/yaml/ColorStat.yaml" command="load"  /-->
+
+    	</node>
+        
+        
+        <node pkg="mst_color" type="color" name="color" args= "image:=ptgrey/image_raw" if="$(arg color)"/>
+
+    </group>
+    
+    <!-- launch firewire and driver and color proc  -->
+    <group unless="$(arg usb)">
+    
+    	<include file="$(find mst_control)/launch/ptgrey.launch"  />
+
+		<node pkg="image_proc" type="image_proc" name="image_proc" ns="ptgrey"  />  
+    
+        
+    	<node if="$(arg edges)" pkg="MST_Edge_Detection" type="Edge_Detection" name="Edge_Detection" args= "image:=ptgrey/image_rect_color" >
+            
+            <rosparam file="$(find MST_Control)/yaml/Edge_Detection.yaml" command="load" />
+
+        </node>
+        
+        
+        <node pkg="MST_ColorStat" type="ColorStat" name="ColorStat" args= "image:=ptgrey/image_rect_color" >
+            
+            <rosparam file="$(find MST_Control)/yaml/ColorStat.yaml" command="load"  />
+
+        </node>
+        
+        <node pkg="mst_homography" type="homography" name="Homography" args= "image_color:=ptgrey/image_rect_color image_masked:=image_stat" >
+            
+            <rosparam file="$(find MST_Control)/yaml/Homography.yaml" command="load"  />
+
+        </node>
+        
+        
+        <node pkg="mst_color" type="color" name="color" args= "image:=ptgrey/image_rect_color" if="$(arg color)"/>
+        
+    </group>
+
+    <!-- launch the midg motors and estop drivers if on robot  -->
+    <group if="$(arg robot)">
+
+        <include file="$(find mst_midg)/launch/midg.launch" />
+
+        <!-- launch the ekf to track robot movement  -->
+        <node pkg="robot_pose_ekf" type="robot_pose_ekf" name="robot_pose_ekf">
+            <param name="output_frame" value="odom_combined"/>
+            <param name="freq" value="30.0"/>
+            <param name="sensor_timeout" value="1.0"/>
+            <param name="odom_used" value="true"/>
+            <param name="imu_used" value="false"/>
+            <param name="vo_used" value="true"/>
+            <param name="debug" value="false"/>
+            <param name="self_diagnose" value="false"/>
+        </node>
+        
+        <node pkg="MST_Motors" type="Motors" name="Motors" />
+        
+        <!-- <node pkg="MST_Estop" type="Estop" name="Estop" /> -->
+
+    </group>
+    
+
 </launch>

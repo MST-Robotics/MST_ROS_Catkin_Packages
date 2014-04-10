@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "mst_color")
+set(mst_color_MAINTAINER "enterprise <enterprise@todo.todo>")
+set(mst_color_DEPRECATED "")
+set(mst_color_VERSION "0.0.0")
+set(mst_color_BUILD_DEPENDS "cv_bridge" "driver_base" "dynamic_reconfigure" "image_transport" "roscpp" "sensor_msgs" "std_msgs")
+set(mst_color_RUN_DEPENDS "cv_bridge" "driver_base" "dynamic_reconfigure" "image_transport" "roscpp" "sensor_msgs" "std_msgs")
+set(mst_color_BUILDTOOL_DEPENDS "catkin")

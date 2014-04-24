@@ -89,7 +89,7 @@ generate_dynamic_reconfigure_options(
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
-  INCLUDE_DIRS include
+#  INCLUDE_DIRS include
   LIBRARIES mst_color
   CATKIN_DEPENDS cv_bridge driver_base dynamic_reconfigure image_transport roscpp sensor_msgs std_msgs
   DEPENDS system_lib
@@ -116,7 +116,7 @@ include_directories(
 
 ## Add cmake target dependencies of the executable/library
 ## as an example, message headers may need to be generated before nodes
- add_dependencies(mst_color mst_color_generate_messages_cpp mst_color_gencfg)
+ add_dependencies(mst_color mst_color_generate_messages_cpp mst_color_gencpp mst_color_gencfg)
 
 ## Specify libraries to link a library or executable target against
  target_link_libraries(mst_color

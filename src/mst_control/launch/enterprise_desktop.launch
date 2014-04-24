@@ -1,0 +1,67 @@
+<launch>
+    <!-- 
+     This is the desktop visuliser launch file for Jomegatron
+     Author: James Anderson
+     Date: 4/23/12
+    -->
+    
+    
+    <!-- Define arguments and defaults  -->
+    <arg name="robot_addr" default="localhost" />
+    <arg name="rviz" default="1" />
+    <arg name="joy_node" default="1"/>
+    <!--arg name="wiimote" default="0" /-->
+    <arg name="sound" default="1" />
+    <arg name="config" default="1" />
+    <arg name="display" default="0" />
+    <arg name="usb" default="1"/>
+    <arg name="edges" default="1"/>
+    <arg name="midge" default="1"/>
+    
+    <!-- conect to the specified master  -->
+    <env name="ROS_MASTER_URI" value="http://$(arg robot_addr):11311" />
+    
+    <!-- launch rviz if requested -->
+    <node name="rviz_desktop" pkg="rviz" type="rviz" args="-d $(find mst_control)/vcg/Enterprise.rviz" if="$(arg rviz)"/>
+    
+    <!-- launch joy package-->
+    <node pkg="joy" type="joy_node" name="joy_node" respawn="true"  />
+    
+    <!-- Camera Node (uvc)-->
+    <node pkg="uvc_camera" type="uvc_camera_node" name="uvc_camera_node" args="camera:=ptgrey" ns="ptgrey" >
+      <param name="width" type="int" value="640" />
+      <param name="height" type="int" value="480" />
+      <param name="fps" type="int" value="30" />
+      <param name="frame_id" type="string" value="pt_grey_link" />
+      <param name="device" type="string" value="/dev" />
+      <param name="camera_info_url" type="string" value="file://$(find uvc_camera)/example.yaml" />
+    </node>
+    
+    <!-- launch wiimote node if requested -->
+    <!--node pkg="wiimote" type="wiimote_node.py" name="wiimote_desktop" respawn="true" if="$(arg wiimote)"/-->
+    
+    <!-- launch soud play for speach syth  -->
+    <!--node pkg="sound_play" type="soundplay_node.py" name="sound_play_desktop" if="$(arg sound)"/-->
+    
+    <!-- launch the dynamic reconfigure gui  -->
+    <node pkg="dynamic_reconfigure" type="reconfigure_gui" name="reconfigure_gui_desktop" if="$(arg config)" />
+
+    <node pkg="/fix" type="/fix" name="GPS" if="$(arg midge)"/>
+    
+    <!-- launch image veiws if display is requested  -->
+    <group if="$(arg display)">
+
+        <node pkg="image_view" type="image_view" name="ptgrey_display" args="image:=/image_raw" if="$(arg usb)"/>
+
+        <node pkg="image_view" type="image_view" name="ptgrey_display" args="image:=ptgrey/image_rect_color" unless="$(arg usb)"/>
+
+        <node if="$(arg edges)" pkg="image_view" type="image_view" name="edges_display" args="image:=image_edges" />
+
+        <node pkg="image_view" type="image_view" name="stat_display" args="image:=image_stat" />
+
+        <node pkg="image_view" type="image_view" name="map_display" args="image:=map" />
+
+    </group>
+    
+</launch>
+

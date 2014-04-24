@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(mst_control_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "" STREQUAL "")
+if(NOT "/home/enterprise/enterprise_ws/devel/include;/home/enterprise/enterprise_ws/src/mst_control/include" STREQUAL "")
   set(mst_control_INCLUDE_DIRS "")
-  set(_include_dirs "")
+  set(_include_dirs "/home/enterprise/enterprise_ws/devel/include;/home/enterprise/enterprise_ws/src/mst_control/include")
   foreach(idir ${_include_dirs})
     if(IS_ABSOLUTE ${idir} AND IS_DIRECTORY ${idir})
       set(include ${idir})
@@ -109,7 +109,7 @@ if(NOT "" STREQUAL "")
   endforeach()
 endif()
 
-set(libraries "")
+set(libraries "mst_control")
 foreach(library ${libraries})
   # keep build configuration keywords, target names and absolute libraries as-is
   if("${library}" MATCHES "^debug|optimized|general$")
@@ -145,7 +145,7 @@ foreach(library ${libraries})
   endif()
 endforeach()
 
-set(mst_control_EXPORTED_TARGETS "")
+set(mst_control_EXPORTED_TARGETS "mst_control_gencfg")
 # create dummy targets for exported code generation targets to make life of users easier
 foreach(t ${mst_control_EXPORTED_TARGETS})
   if(NOT TARGET ${t})
@@ -153,7 +153,7 @@ foreach(t ${mst_control_EXPORTED_TARGETS})
   endif()
 endforeach()
 
-set(depends "")
+set(depends "dynamic_reconfigure")
 foreach(depend ${depends})
   string(REPLACE " " ";" depend_list ${depend})
   # the package name of the dependency must be kept in a unique variable so that it is not overwritten in recursive calls

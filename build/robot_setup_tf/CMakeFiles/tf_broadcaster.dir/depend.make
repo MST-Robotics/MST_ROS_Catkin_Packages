@@ -8,14 +8,17 @@ robot_setup_tf/CMakeFiles/tf_broadcaster.dir/src/tf_broadcaster.cpp.o: /opt/ros/
 robot_setup_tf/CMakeFiles/tf_broadcaster.dir/src/tf_broadcaster.cpp.o: /opt/ros/hydro/include/geometry_msgs/PointStamped.h
 robot_setup_tf/CMakeFiles/tf_broadcaster.dir/src/tf_broadcaster.cpp.o: /opt/ros/hydro/include/geometry_msgs/Pose.h
 robot_setup_tf/CMakeFiles/tf_broadcaster.dir/src/tf_broadcaster.cpp.o: /opt/ros/hydro/include/geometry_msgs/PoseStamped.h
+robot_setup_tf/CMakeFiles/tf_broadcaster.dir/src/tf_broadcaster.cpp.o: /opt/ros/hydro/include/geometry_msgs/PoseWithCovariance.h
 robot_setup_tf/CMakeFiles/tf_broadcaster.dir/src/tf_broadcaster.cpp.o: /opt/ros/hydro/include/geometry_msgs/Quaternion.h
 robot_setup_tf/CMakeFiles/tf_broadcaster.dir/src/tf_broadcaster.cpp.o: /opt/ros/hydro/include/geometry_msgs/QuaternionStamped.h
 robot_setup_tf/CMakeFiles/tf_broadcaster.dir/src/tf_broadcaster.cpp.o: /opt/ros/hydro/include/geometry_msgs/Transform.h
 robot_setup_tf/CMakeFiles/tf_broadcaster.dir/src/tf_broadcaster.cpp.o: /opt/ros/hydro/include/geometry_msgs/TransformStamped.h
 robot_setup_tf/CMakeFiles/tf_broadcaster.dir/src/tf_broadcaster.cpp.o: /opt/ros/hydro/include/geometry_msgs/Twist.h
 robot_setup_tf/CMakeFiles/tf_broadcaster.dir/src/tf_broadcaster.cpp.o: /opt/ros/hydro/include/geometry_msgs/TwistStamped.h
+robot_setup_tf/CMakeFiles/tf_broadcaster.dir/src/tf_broadcaster.cpp.o: /opt/ros/hydro/include/geometry_msgs/TwistWithCovariance.h
 robot_setup_tf/CMakeFiles/tf_broadcaster.dir/src/tf_broadcaster.cpp.o: /opt/ros/hydro/include/geometry_msgs/Vector3.h
 robot_setup_tf/CMakeFiles/tf_broadcaster.dir/src/tf_broadcaster.cpp.o: /opt/ros/hydro/include/geometry_msgs/Vector3Stamped.h
+robot_setup_tf/CMakeFiles/tf_broadcaster.dir/src/tf_broadcaster.cpp.o: /opt/ros/hydro/include/nav_msgs/Odometry.h
 robot_setup_tf/CMakeFiles/tf_broadcaster.dir/src/tf_broadcaster.cpp.o: /opt/ros/hydro/include/ros/advertise_options.h
 robot_setup_tf/CMakeFiles/tf_broadcaster.dir/src/tf_broadcaster.cpp.o: /opt/ros/hydro/include/ros/advertise_service_options.h
 robot_setup_tf/CMakeFiles/tf_broadcaster.dir/src/tf_broadcaster.cpp.o: /opt/ros/hydro/include/ros/assert.h

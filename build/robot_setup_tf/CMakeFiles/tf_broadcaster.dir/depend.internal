@@ -9,14 +9,17 @@ robot_setup_tf/CMakeFiles/tf_broadcaster.dir/src/tf_broadcaster.cpp.o
  /opt/ros/hydro/include/geometry_msgs/PointStamped.h
  /opt/ros/hydro/include/geometry_msgs/Pose.h
  /opt/ros/hydro/include/geometry_msgs/PoseStamped.h
+ /opt/ros/hydro/include/geometry_msgs/PoseWithCovariance.h
  /opt/ros/hydro/include/geometry_msgs/Quaternion.h
  /opt/ros/hydro/include/geometry_msgs/QuaternionStamped.h
  /opt/ros/hydro/include/geometry_msgs/Transform.h
  /opt/ros/hydro/include/geometry_msgs/TransformStamped.h
  /opt/ros/hydro/include/geometry_msgs/Twist.h
  /opt/ros/hydro/include/geometry_msgs/TwistStamped.h
+ /opt/ros/hydro/include/geometry_msgs/TwistWithCovariance.h
  /opt/ros/hydro/include/geometry_msgs/Vector3.h
  /opt/ros/hydro/include/geometry_msgs/Vector3Stamped.h
+ /opt/ros/hydro/include/nav_msgs/Odometry.h
  /opt/ros/hydro/include/ros/advertise_options.h
  /opt/ros/hydro/include/ros/advertise_service_options.h
  /opt/ros/hydro/include/ros/assert.h

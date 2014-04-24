@@ -2,7 +2,6 @@
 /home/enterprise/enterprise_ws/build/mst_colorstat/CMakeFiles/ColorStat_Stat.dir
 /home/enterprise/enterprise_ws/build/mst_colorstat/CMakeFiles/ColorStat_error.dir
 /home/enterprise/enterprise_ws/build/mst_estop/CMakeFiles/Estop.dir
-/home/enterprise/enterprise_ws/build/mst_control/CMakeFiles/_catkin_empty_exported_target.dir
 /home/enterprise/enterprise_ws/build/mst_position/CMakeFiles/actionlib_generate_messages_cpp.dir
 /home/enterprise/enterprise_ws/build/mst_position/CMakeFiles/actionlib_generate_messages_lisp.dir
 /home/enterprise/enterprise_ws/build/mst_position/CMakeFiles/actionlib_generate_messages_py.dir
@@ -26,6 +25,8 @@
 /home/enterprise/enterprise_ws/build/mst_color/CMakeFiles/mst_color.dir
 /home/enterprise/enterprise_ws/build/mst_color/CMakeFiles/mst_color_gencfg.dir
 /home/enterprise/enterprise_ws/build/mst_colorstat/CMakeFiles/mst_colorstat_gencfg.dir
+/home/enterprise/enterprise_ws/build/mst_control/CMakeFiles/mst_control.dir
+/home/enterprise/enterprise_ws/build/mst_control/CMakeFiles/mst_control_gencfg.dir
 /home/enterprise/enterprise_ws/build/mst_estop/CMakeFiles/mst_estop_gencpp.dir
 /home/enterprise/enterprise_ws/build/mst_estop/CMakeFiles/mst_estop_generate_messages.dir
 /home/enterprise/enterprise_ws/build/mst_estop/CMakeFiles/mst_estop_generate_messages_cpp.dir

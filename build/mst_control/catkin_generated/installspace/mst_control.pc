@@ -3,6 +3,6 @@ prefix=/home/enterprise/enterprise_ws/install
 Name: mst_control
 Description: Description of mst_control
 Version: 0.0.0
-Cflags: 
-Libs: -L/home/enterprise/enterprise_ws/install/lib 
-Requires: 
+Cflags: -I/home/enterprise/enterprise_ws/install/include
+Libs: -L/home/enterprise/enterprise_ws/install/lib -lmst_control
+Requires: dynamic_reconfigure

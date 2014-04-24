@@ -589,17 +589,30 @@ mst_colorstat_gencfg/fast:
 .PHONY : mst_colorstat_gencfg/fast
 
 #=============================================================================
-# Target rules for targets named _catkin_empty_exported_target
+# Target rules for targets named mst_control
 
 # Build rule for target.
-_catkin_empty_exported_target: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _catkin_empty_exported_target
-.PHONY : _catkin_empty_exported_target
+mst_control: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mst_control
+.PHONY : mst_control
 
 # fast build rule for target.
-_catkin_empty_exported_target/fast:
-	$(MAKE) -f mst_control/CMakeFiles/_catkin_empty_exported_target.dir/build.make mst_control/CMakeFiles/_catkin_empty_exported_target.dir/build
-.PHONY : _catkin_empty_exported_target/fast
+mst_control/fast:
+	$(MAKE) -f mst_control/CMakeFiles/mst_control.dir/build.make mst_control/CMakeFiles/mst_control.dir/build
+.PHONY : mst_control/fast
+
+#=============================================================================
+# Target rules for targets named mst_control_gencfg
+
+# Build rule for target.
+mst_control_gencfg: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mst_control_gencfg
+.PHONY : mst_control_gencfg
+
+# fast build rule for target.
+mst_control_gencfg/fast:
+	$(MAKE) -f mst_control/CMakeFiles/mst_control_gencfg.dir/build.make mst_control/CMakeFiles/mst_control_gencfg.dir/build
+.PHONY : mst_control_gencfg/fast
 
 #=============================================================================
 # Target rules for targets named Estop
@@ -1220,7 +1233,8 @@ help:
 	@echo "... ColorStat_Stat"
 	@echo "... ColorStat_error"
 	@echo "... mst_colorstat_gencfg"
-	@echo "... _catkin_empty_exported_target"
+	@echo "... mst_control"
+	@echo "... mst_control_gencfg"
 	@echo "... Estop"
 	@echo "... mst_estop_gencpp"
 	@echo "... mst_estop_generate_messages"

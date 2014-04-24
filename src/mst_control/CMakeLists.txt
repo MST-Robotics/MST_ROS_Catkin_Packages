@@ -4,7 +4,10 @@ project(mst_control)
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
-find_package(catkin REQUIRED)
+find_package(catkin REQUIRED
+  dynamic_reconfigure
+  roscpp
+)
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
@@ -38,6 +41,11 @@ find_package(catkin REQUIRED)
 ##     and list every .msg/.srv/.action file to be processed
 ##   * uncomment the generate_messages entry below
 ##   * add every package in MSG_DEP_SET to generate_messages(DEPENDENCIES ...)
+
+## Add dynamic reconfigure api
+generate_dynamic_reconfigure_options(
+  cfg/Control_Params.cfg
+)
 
 ## Generate messages in the 'msg' folder
 # add_message_files(
@@ -76,10 +84,10 @@ find_package(catkin REQUIRED)
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
-#  INCLUDE_DIRS include
-#  LIBRARIES mst_control
-#  CATKIN_DEPENDS other_catkin_pkg
-#  DEPENDS system_lib
+  INCLUDE_DIRS include
+  LIBRARIES mst_control
+  CATKIN_DEPENDS dynamic_reconfigure
+  DEPENDS system_lib
 )
 
 ###########
@@ -96,16 +104,16 @@ catkin_package(
 # )
 
 ## Declare a cpp executable
-# add_executable(mst_control_node src/mst_control_node.cpp)
+add_executable(mst_control src/control.cpp)
 
 ## Add cmake target dependencies of the executable/library
 ## as an example, message headers may need to be generated before nodes
-# add_dependencies(mst_control_node mst_control_generate_messages_cpp)
+add_dependencies(mst_control mst_control_gencpp mst_control_gencfg)
 
 ## Specify libraries to link a library or executable target against
-# target_link_libraries(mst_control_node
-#   ${catkin_LIBRARIES}
-# )
+target_link_libraries(mst_control
+   ${catkin_LIBRARIES}
+)
 
 #############
 ## Install ##

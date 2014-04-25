@@ -3,6 +3,6 @@ prefix=/home/enterprise/enterprise_ws/devel
 Name: mst_position
 Description: Description of mst_position
 Version: 0.0.0
-Cflags: -I/home/enterprise/enterprise_ws/devel/include -I/home/enterprise/enterprise_ws/src/mst_position/include
+Cflags: -I/home/enterprise/enterprise_ws/devel/include
 Libs: -L/home/enterprise/enterprise_ws/devel/lib -lmst_position
 Requires: driver_base dynamic_reconfigure geometry_msgs nav_msgs sensor_msgs tf dynamic_reconfigure

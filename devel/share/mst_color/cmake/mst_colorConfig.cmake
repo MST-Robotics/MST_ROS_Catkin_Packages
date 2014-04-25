@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(mst_color_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/enterprise/enterprise_ws/devel/include;/home/enterprise/enterprise_ws/src/mst_color/include" STREQUAL "")
+if(NOT "/home/enterprise/enterprise_ws/devel/include" STREQUAL "")
   set(mst_color_INCLUDE_DIRS "")
-  set(_include_dirs "/home/enterprise/enterprise_ws/devel/include;/home/enterprise/enterprise_ws/src/mst_color/include")
+  set(_include_dirs "/home/enterprise/enterprise_ws/devel/include")
   foreach(idir ${_include_dirs})
     if(IS_ABSOLUTE ${idir} AND IS_DIRECTORY ${idir})
       set(include ${idir})

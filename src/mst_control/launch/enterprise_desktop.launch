@@ -31,7 +31,7 @@
     <node pkg="image_proc" type="image_proc" name="image_proc" ns="camera">
     </node>
     
-    <node pkg="camera1394" type="camera1394_node" name="camera1394_node" args="_guid:=00b09d0100bee3c5 _video_mode:=640x480_mono8 _iso_speed:=400 _frame_rate:=15"  >
+    <node pkg="camera1394" type="camera1394_node" name="camera1394_node" args="_guid:=00b09d01009ec9dd _video_mode:=640x480_mono8 _iso_speed:=400 _frame_rate:=30"  >
       <!--param name="guid" type="string" value="00b09d0100bee3c5" /-->
       <param name="width" type="int" value="640" />
       <param name="height" type="int" value="480" />
@@ -50,9 +50,38 @@
     
     <!-- launch the dynamic reconfigure gui  -->
     <node pkg="dynamic_reconfigure" type="reconfigure_gui" name="reconfigure_gui_desktop" if="$(arg config)" />
+    
+    <node pkg="mst_colorstat" type="ColorStat" name="ColorStat" args= "image:=ptgrey/image_color" >
+        
+      <rosparam file="$(find mst_control)/yaml/ColorStat.yaml" command="load" />
 
+    </node>
+    
+    <!--node pkg="mst_color" type="mst_color" name="mst_color" args= "image:=camera/image_color" /-->
+      
    
     <node pkg="mst_midg" type="mst_midg" name="mst_midg" if="$(arg midge)"/>
+    
+    <node pkg="mst_position" type="mst_position" name="mst_position" >
+        
+      <rosparam file="$(find mst_control)/yaml/Carrot.yaml" command="load" />
+        
+    </node>
+    
+    <node pkg="mst_navigation" type="mst_navigation" name="mst_navigation" >
+    
+      <!-- load parameters into parameter server -->
+      <rosparam file="$(find mst_control)/yaml/Pot_Nav.yaml" command="load" />
+
+    </node>
+    
+    <node pkg="mst_control" type="mst_control" name="mst_control" required="true" >
+        
+      <rosparam file="$(find mst_control)/yaml/Control.yaml" command="load" />
+        
+    </node>
+    
+    
     
     <!-- launch image veiws if display is requested  -->
     <group if="$(arg display)">

@@ -6,6 +6,24 @@
 
 #IncludeRegexTransform: 
 
+/home/enterprise/enterprise_ws/devel/include/mst_color/Color_ParamsConfig.h
+dynamic_reconfigure/config_tools.h
+-
+limits
+-
+ros/node_handle.h
+-
+dynamic_reconfigure/ConfigDescription.h
+-
+dynamic_reconfigure/ParamDescription.h
+-
+dynamic_reconfigure/Group.h
+-
+dynamic_reconfigure/config_init_mutex.h
+-
+boost/any.hpp
+-
+
 /home/enterprise/enterprise_ws/src/mst_color/src/color.cpp
 color.h
 /home/enterprise/enterprise_ws/src/mst_color/src/color.h
@@ -35,7 +53,7 @@ opencv2/highgui/highgui.hpp
 -
 dynamic_reconfigure/server.h
 -
-mst_color/color_paramsConfig.h
+mst_color/Color_ParamsConfig.h
 -
 vector
 -
@@ -274,6 +292,20 @@ ros/serialization.h
 ros/builtin_message_traits.h
 -
 ros/message_operations.h
+-
+
+/opt/ros/hydro/include/dynamic_reconfigure/config_init_mutex.h
+boost/thread/mutex.hpp
+-
+
+/opt/ros/hydro/include/dynamic_reconfigure/config_tools.h
+string
+-
+vector
+-
+dynamic_reconfigure/Config.h
+-
+dynamic_reconfigure/Group.h
 -
 
 /opt/ros/hydro/include/dynamic_reconfigure/server.h

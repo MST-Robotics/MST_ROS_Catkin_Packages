@@ -1,4 +1,16 @@
+/*******************************************************************************
+* @file: motors.cpp
+* @author: Matt Anderson <mia2n4>
+* @version: 1.0
+* @brief: Subscribes to twist message which publishes an angular velocity 
+          (angular.z) and a linear velocity (linear.x) and translates it to four
+          signals which are used by the arduinos.  Velocity is a value between 0
+          and 255 and direction is 1 for back and 0 for forward.
+*******************************************************************************/
+
+
 #include <ros/rosh.h>
+
 #include <geometry_msgs/Twist.h>
 
 using namespace std;

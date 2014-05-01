@@ -377,6 +377,12 @@ mst_midg_DIR:PATH=/home/enterprise/enterprise_ws/devel/share/mst_midg/cmake
 mst_midg_SOURCE_DIR:STATIC=/home/enterprise/enterprise_ws/src/mst_midg
 
 //Value Computed by CMake
+mst_motors_BINARY_DIR:STATIC=/home/enterprise/enterprise_ws/build/mst_motors
+
+//Value Computed by CMake
+mst_motors_SOURCE_DIR:STATIC=/home/enterprise/enterprise_ws/src/mst_motors
+
+//Value Computed by CMake
 mst_navigation_BINARY_DIR:STATIC=/home/enterprise/enterprise_ws/build/mst_navigation
 
 //Value Computed by CMake
@@ -560,7 +566,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=10
+CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=11
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

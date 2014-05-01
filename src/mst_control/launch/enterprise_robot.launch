@@ -85,7 +85,7 @@ Date: 4/23/12
         
      <!--node if="$(arg edges)" pkg="MST_Edge_Detection" type="Edge_Detection" name="Edge_Detection" args= "image:=ptgrey/image_raw" -->
     
-     <rosparam file="$(find mst_control)/yaml/Edge_Detection.yaml" command="load" />
+     <!--rosparam file="$(find mst_control)/yaml/Edge_Detection.yaml" command="load" /-->
 
      <!--/node-->
     
@@ -111,7 +111,7 @@ Date: 4/23/12
         
      <!--node if="$(arg edges)" pkg="MST_Edge_Detection" type="Edge_Detection" name="Edge_Detection" args= "image:=ptgrey/image_rect_color" -->
             
-            <rosparam file="$(find mst_control)/yaml/Edge_Detection.yaml" command="load" />
+            <!--rosparam file="$(find mst_control)/yaml/Edge_Detection.yaml" command="load" /-->
 
         <!--/node-->
         
@@ -124,7 +124,7 @@ Date: 4/23/12
         
         <!--node pkg="mst_homography" type="homography" name="Homography" args= "image_color:=ptgrey/image_rect_color image_masked:=image_stat" -->
             
-            <rosparam file="$(find mst_control)/yaml/Homography.yaml" command="load" />
+            <!--rosparam file="$(find mst_control)/yaml/Homography.yaml" command="load" /-->
 
         <!--/node-->
         

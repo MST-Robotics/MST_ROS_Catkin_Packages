@@ -69,7 +69,7 @@ int main(int argc, char **argv)
 
         imu_pub.publish( imu_msg );
         navSatFix_pub.publish( navSatFix_msg );
-    }
+    }rqty
 
 }
 
@@ -82,7 +82,7 @@ int Open_MIDG_Connection()
     struct termios newtio;
 
     fd = open("/dev/ttyUSB0", O_RDWR | O_NOCTTY | O_NONBLOCK );
-    if (fd <0) {perror("/dev/ttyUSB1"); exit(-1); }
+    if (fd <0) {perror("/dev/ttyUSB0"); exit(-1); }
 
     memset( &newtio, 0x00, sizeof(newtio) );
 

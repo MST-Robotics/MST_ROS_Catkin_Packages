@@ -20,7 +20,7 @@ Date: 4/23/12
 
     
     <!-- launch rviz if requested -->
-    <node name="rviz_robot" pkg="rqt_rviz" type="rqt_rviz" args="-d $(find mst_control)/vcg/Jomegatron.vcg" if="$(arg rviz)"/>
+    <node name="rviz_robot" pkg="rqt_rviz" type="rqt_rviz" args="-d $(find mst_control)/vcg/Jomegatron.rviz" if="$(arg rviz)"/>
     
         <node pkg="joy" type="joy_node" name="joy_node_robot" respawn="true" if="$(arg joy_node)"/>
     
@@ -85,7 +85,7 @@ Date: 4/23/12
         
      <!--node if="$(arg edges)" pkg="MST_Edge_Detection" type="Edge_Detection" name="Edge_Detection" args= "image:=ptgrey/image_raw" -->
     
-     <rosparam file="$(find mst_control)/yaml/Edge_Detection.yaml" command="load" />
+     <!--rosparam file="$(find mst_control)/yaml/Edge_Detection.yaml" command="load" /-->
 
      <!--/node-->
     

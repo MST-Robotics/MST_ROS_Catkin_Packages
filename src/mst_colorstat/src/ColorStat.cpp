@@ -186,10 +186,10 @@ int main(int argc, char **argv)
 	srv.setCallback(f);
     
     //get topic name
-    topic = n.resolveName("image");
+    topic = n.resolveName("camera/image_raw");
 
 	//check to see if user has defined an image to subscribe to 
-    if (topic == "/image") 
+    if (topic == "/image_raw") 
     {
 		ROS_WARN("Edge_Detection: image has not been remapped! Typical command-line usage:\n"
 				 "\t$ ./Edge_Detection image:=<image topic> [transport]");

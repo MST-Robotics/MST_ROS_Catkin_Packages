@@ -69,7 +69,7 @@ int main(int argc, char **argv)
 
         imu_pub.publish( imu_msg );
         navSatFix_pub.publish( navSatFix_msg );
-    }
+    };//rqty
 
 }
 

@@ -171,7 +171,7 @@ void imageCallback(const sensor_msgs::ImageConstPtr& msg)
     
     }
     
-    ROS_INFO("color: x_run_lengths:%i", x_run_lengths.size());
+    //ROS_INFO("color: x_run_lengths: %i", x_run_lengths.size());
     
     //find yrun lengths
     for (int x = 0; x < sobel_y.rows; x++)
@@ -275,7 +275,7 @@ void imageCallback(const sensor_msgs::ImageConstPtr& msg)
     
     }
     
-    ROS_INFO("color: y_run_lengths:%i", y_run_lengths.size());
+    //ROS_INFO("color: y_run_lengths:%i", y_run_lengths.size());
     
     
     //call recursive function to link the runs
@@ -312,7 +312,7 @@ void imageCallback(const sensor_msgs::ImageConstPtr& msg)
         }
     }
     
-    ROS_INFO("color: segments:%i", segments.size());
+    //ROS_INFO("color: segments:%i", segments.size());
     
     
     //paint debug image with average values
@@ -431,10 +431,10 @@ int main(int argc, char **argv)
     
     
     //get depth topic name
-    image_topic = node.resolveName("image");
+    image_topic = node.resolveName("camera/image_raw");
 
     //check to see if user has defined an image to subscribe to 
-    if (image_topic == "/image") 
+    if (image_topic == "/image_raw") 
     {
         ROS_WARN("color: image has not been remapped! Typical command-line usage:\n"
                  "\t$ ./color image:=<image topic> [transport]");
@@ -442,7 +442,7 @@ int main(int argc, char **argv)
     
     
     //create image subscriptions
-    image_sub = it.subscribe( image_topic , 1, imageCallback  );
+    image_sub = it.subscribe( "camera/image_raw" , 1, imageCallback  );
 
     //create image publishers
     dbg_pub = it.advertise( "color/dbg" , 5 );

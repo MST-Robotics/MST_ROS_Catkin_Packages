@@ -171,7 +171,7 @@ void imageCallback(const sensor_msgs::ImageConstPtr& msg)
     
     }
     
-    ROS_INFO("color: x_run_lengths:%i", x_run_lengths.size());
+    //ROS_INFO("color: x_run_lengths: %i", x_run_lengths.size());
     
     //find yrun lengths
     for (int x = 0; x < sobel_y.rows; x++)
@@ -275,7 +275,7 @@ void imageCallback(const sensor_msgs::ImageConstPtr& msg)
     
     }
     
-    ROS_INFO("color: y_run_lengths:%i", y_run_lengths.size());
+    //ROS_INFO("color: y_run_lengths:%i", y_run_lengths.size());
     
     
     //call recursive function to link the runs
@@ -312,7 +312,7 @@ void imageCallback(const sensor_msgs::ImageConstPtr& msg)
         }
     }
     
-    ROS_INFO("color: segments:%i", segments.size());
+    //ROS_INFO("color: segments:%i", segments.size());
     
     
     //paint debug image with average values
@@ -424,8 +424,8 @@ int main(int argc, char **argv)
     image_transport::ImageTransport it(node);
     
     //setup dynamic reconfigure gui
-    dynamic_reconfigure::Server<mst_color::color_paramsConfig> srv;
-    dynamic_reconfigure::Server<mst_color::color_paramsConfig>::CallbackType f;
+    dynamic_reconfigure::Server<mst_color::Color_ParamsConfig> srv;
+    dynamic_reconfigure::Server<mst_color::Color_ParamsConfig>::CallbackType f;
     f = boost::bind(&setparamsCallback, _1, _2);
     srv.setCallback(f);
     
@@ -442,7 +442,7 @@ int main(int argc, char **argv)
     
     
     //create image subscriptions
-    image_sub = it.subscribe( image_topic , 1, imageCallback  );
+    image_sub = it.subscribe( "camera/image_raw" , 1, imageCallback  );
 
     //create image publishers
     dbg_pub = it.advertise( "color/dbg" , 5 );

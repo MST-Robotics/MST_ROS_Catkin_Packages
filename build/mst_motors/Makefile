@@ -146,6 +146,44 @@ depend:
 	cd /home/enterprise/enterprise_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+mst_motors/CMakeFiles/mst_motors.dir/rule:
+	cd /home/enterprise/enterprise_ws/build && $(MAKE) -f CMakeFiles/Makefile2 mst_motors/CMakeFiles/mst_motors.dir/rule
+.PHONY : mst_motors/CMakeFiles/mst_motors.dir/rule
+
+# Convenience name for target.
+mst_motors: mst_motors/CMakeFiles/mst_motors.dir/rule
+.PHONY : mst_motors
+
+# fast build rule for target.
+mst_motors/fast:
+	cd /home/enterprise/enterprise_ws/build && $(MAKE) -f mst_motors/CMakeFiles/mst_motors.dir/build.make mst_motors/CMakeFiles/mst_motors.dir/build
+.PHONY : mst_motors/fast
+
+src/motors.o: src/motors.cpp.o
+.PHONY : src/motors.o
+
+# target to build an object file
+src/motors.cpp.o:
+	cd /home/enterprise/enterprise_ws/build && $(MAKE) -f mst_motors/CMakeFiles/mst_motors.dir/build.make mst_motors/CMakeFiles/mst_motors.dir/src/motors.cpp.o
+.PHONY : src/motors.cpp.o
+
+src/motors.i: src/motors.cpp.i
+.PHONY : src/motors.i
+
+# target to preprocess a source file
+src/motors.cpp.i:
+	cd /home/enterprise/enterprise_ws/build && $(MAKE) -f mst_motors/CMakeFiles/mst_motors.dir/build.make mst_motors/CMakeFiles/mst_motors.dir/src/motors.cpp.i
+.PHONY : src/motors.cpp.i
+
+src/motors.s: src/motors.cpp.s
+.PHONY : src/motors.s
+
+# target to generate assembly for a file
+src/motors.cpp.s:
+	cd /home/enterprise/enterprise_ws/build && $(MAKE) -f mst_motors/CMakeFiles/mst_motors.dir/build.make mst_motors/CMakeFiles/mst_motors.dir/src/motors.cpp.s
+.PHONY : src/motors.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -157,8 +195,12 @@ help:
 	@echo "... install/local"
 	@echo "... install/strip"
 	@echo "... list_install_components"
+	@echo "... mst_motors"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... src/motors.o"
+	@echo "... src/motors.i"
+	@echo "... src/motors.s"
 .PHONY : help
 
 

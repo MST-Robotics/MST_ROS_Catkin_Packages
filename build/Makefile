@@ -823,6 +823,19 @@ mst_midg_genpy/fast:
 .PHONY : mst_midg_genpy/fast
 
 #=============================================================================
+# Target rules for targets named mst_motors
+
+# Build rule for target.
+mst_motors: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mst_motors
+.PHONY : mst_motors
+
+# fast build rule for target.
+mst_motors/fast:
+	$(MAKE) -f mst_motors/CMakeFiles/mst_motors.dir/build.make mst_motors/CMakeFiles/mst_motors.dir/build
+.PHONY : mst_motors/fast
+
+#=============================================================================
 # Target rules for targets named actionlib_generate_messages_cpp
 
 # Build rule for target.
@@ -1251,6 +1264,7 @@ help:
 	@echo "... mst_midg_generate_messages_py"
 	@echo "... mst_midg_genlisp"
 	@echo "... mst_midg_genpy"
+	@echo "... mst_motors"
 	@echo "... actionlib_generate_messages_cpp"
 	@echo "... actionlib_generate_messages_lisp"
 	@echo "... actionlib_generate_messages_py"

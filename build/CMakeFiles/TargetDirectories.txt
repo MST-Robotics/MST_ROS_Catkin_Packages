@@ -42,6 +42,7 @@
 /home/enterprise/enterprise_ws/build/mst_midg/CMakeFiles/mst_midg_generate_messages_py.dir
 /home/enterprise/enterprise_ws/build/mst_midg/CMakeFiles/mst_midg_genlisp.dir
 /home/enterprise/enterprise_ws/build/mst_midg/CMakeFiles/mst_midg_genpy.dir
+/home/enterprise/enterprise_ws/build/mst_motors/CMakeFiles/mst_motors.dir
 /home/enterprise/enterprise_ws/build/mst_navigation/CMakeFiles/mst_navigation.dir
 /home/enterprise/enterprise_ws/build/mst_navigation/CMakeFiles/mst_navigation_gencfg.dir
 /home/enterprise/enterprise_ws/build/mst_position/CMakeFiles/mst_position.dir

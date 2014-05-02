@@ -322,6 +322,7 @@ SET(CMAKE_DEPEND_INFO_FILES
   "mst_midg/CMakeFiles/mst_midg_generate_messages_py.dir/DependInfo.cmake"
   "mst_midg/CMakeFiles/mst_midg_genlisp.dir/DependInfo.cmake"
   "mst_midg/CMakeFiles/mst_midg_genpy.dir/DependInfo.cmake"
+  "mst_motors/CMakeFiles/mst_motors.dir/DependInfo.cmake"
   "mst_position/CMakeFiles/actionlib_generate_messages_cpp.dir/DependInfo.cmake"
   "mst_position/CMakeFiles/actionlib_generate_messages_lisp.dir/DependInfo.cmake"
   "mst_position/CMakeFiles/actionlib_generate_messages_py.dir/DependInfo.cmake"

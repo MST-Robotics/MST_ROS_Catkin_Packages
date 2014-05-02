@@ -15,14 +15,14 @@
     <arg name="config" default="1" />
     <arg name="display" default="0" />
     <arg name="usb" default="1"/>
-    <arg name="edges" default="1"/>
+    <arg name="edges" default="0"/>
     <arg name="midge" default="1"/>
     
     <!-- conect to the specified master  -->
     <env name="ROS_MASTER_URI" value="http://$(arg robot_addr):11311" />
     
     <!-- launch rviz if requested -->
-    <node name="rviz_desktop" pkg="rviz" type="rviz" args="-d $(find mst_control)/vcg/Enterprise.rviz" if="$(arg rviz)"/>
+    <node name="rviz_desktop" pkg="rqt_rviz" type="rqt_rviz" args="-d $(find mst_control)/vcg/Enterprise.rviz" if="$(arg rviz)"/>
     
     <!-- launch joy package-->
     <node pkg="joy" type="joy_node" name="joy_node" respawn="true"  />
@@ -31,7 +31,7 @@
     <node pkg="image_proc" type="image_proc" name="image_proc" ns="camera">
     </node>
     
-    <node pkg="camera1394" type="camera1394_node" name="camera1394_node" args="_guid:=00b09d01009ec9dd _video_mode:=640x480_mono8 _iso_speed:=400 _frame_rate:=15"  >
+    <node pkg="camera1394" type="camera1394_node" name="camera1394_node" args="_guid:=00b09d01009ec9dd _video_mode:=640x480_mono8 _iso_speed:=400 _frame_rate:=30"  >
       <!--param name="guid" type="string" value="00b09d0100bee3c5" /-->
       <param name="width" type="int" value="640" />
       <param name="height" type="int" value="480" />

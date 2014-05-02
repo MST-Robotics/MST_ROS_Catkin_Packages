@@ -15,7 +15,7 @@
     <arg name="config" default="1" />
     <arg name="display" default="0" />
     <arg name="usb" default="1"/>
-    <arg name="edges" default="1"/>
+    <arg name="edges" default="0"/>
     <arg name="midge" default="1"/>
     
     <!-- conect to the specified master  -->

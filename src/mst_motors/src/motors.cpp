@@ -26,7 +26,7 @@ float angularVel;
 const float ROBOT_RAD  = 0.28; //meters
 const float WHEEL_RAD  = 0.20; //meters
 const float GEAR_RATIO = 0;    //don't know
-const int   MAX_PUB    = 255;  //This is the max value that can be published
+const int   MAX_PUB    = 256;  //This is the max value that can be published
 
 //Callback from twist which gets a linear and angular velocity
 void twistCallback(const geometry_msgs::Twist::ConstPtr& msg)
@@ -43,7 +43,7 @@ int main(int argc, char **argv)
   const int TURNS_PER_SEC = GEAR_RATIO / (2 * WHEEL_RAD * M_PI);
   const int TURN_OFFSET = TURNS_PER_SEC * ROBOT_RAD;
   
-  std_msgs::Int16 leftVel, rightVel;
+  std_msgs::Int16 leftVel, rightVel, leftDir, rightDir;
 
   //create ros node for publishing motor messages to arduino
   ros::init(argc, argv, "");
@@ -70,22 +70,34 @@ int main(int argc, char **argv)
     
     //Left and right velocities
     leftVel.data  = (linearVel * TURNS_PER_SEC) + (TURN_OFFSET * angularVel);
-    rightVel.data = (linearVel * TURNS_PER_SEC) + (TURN_OFFSET * angularVel);
+    rightVel.data = (linearVel * TURNS_PER_SEC) - (TURN_OFFSET * angularVel);
     
-    //TODO: Find direction to spin motor
+    //take out any negative values
+    leftVel.data  = abs(leftVel.data);
+    rightVel.data = abs(rightVel.data);
     
-    //Scale the values to a max of 255
-    leftVel.data  = abs(leftVel.data) / MAX_PUB;
-    rightVel.data = abs(rightVel.data) / MAX_PUB;
-    
-    if(leftVel.data > MAX_PUB)
+    //Max speed is 255, if its higher than 255 set it to 255
+    if(abs(leftVel.data) > MAX_PUB)
       leftVel.data = MAX_PUB;
-    if(rightVel.data > MAX_PUB)
+    if(abs(rightVel.data) > MAX_PUB)
       rightVel.data = MAX_PUB;
     
-    //publish the   
+    //publish the speed
     leftMotorSpeed.publish(leftVel);
-    rightMotorSpeed.publish(rightVel);  
+    rightMotorSpeed.publish(rightVel); 
+    
+    //find each motors direction
+    if(leftVel.data < 0)
+      leftDir.data = 1;
+    else
+      leftDir.data = 0;
+    if(rightVel.data < 0)
+      rightDir.data = 1;
+    else
+      rightDir.data = 0;
+    
+    leftMotorDir.publish(leftDir);
+    rightMotorDir.publish(rightDir);
   }
 
 
